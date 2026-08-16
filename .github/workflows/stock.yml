@@ -7,21 +7,18 @@ jobs:
   run:
     runs-on: ubuntu-latest
     env:
-      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      HERMES_MODEL: google/gemini-2.5-flash
-      HERMES_PROVIDER: google
     steps:
       - name: Install Hermes
         run: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
-      - name: Configure Hermes Model
+      - name: Configure Hermes Model (OpenRouter)
         run: |
           hermes config set model.default google/gemini-2.5-flash
-          hermes config set model.provider google
-          hermes config set model.base_url https://generativelanguage.googleapis.com/v1beta
+          hermes config set model.provider openrouter
+          hermes config set model.base_url https://openrouter.ai/api/v1
 
       - name: Run Stock Analysis
         run: hermes chat -q "stock-analysis 스킬로 10종목 분석"
