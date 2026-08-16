@@ -1,0 +1,21 @@
+﻿name: Daily Stock
+on:
+  schedule:
+    - cron: "30 0 * * *"  # UTC 00:30 = KST 09:30
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hermes
+        run: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+      - name: Run Stock Analysis
+        run: hermes chat -q "stock-analysis 스킬로 10종목 분석"
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      - name: Send Telegram Notification
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: "📊 일일 주식 리포트 완료"
