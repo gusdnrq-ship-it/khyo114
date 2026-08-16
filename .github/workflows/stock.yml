@@ -10,11 +10,11 @@ jobs:
       - name: Install Hermes
         run: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
-      - name: Configure Hermes Model (OpenRouter)
+      - name: Configure Hermes Model (OpenRouter Free)
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          hermes config set model.default google/gemini-2.5-flash
+          hermes config set model.default meta-llama/llama-3.1-8b-instruct:free
           hermes config set model.provider openrouter
           hermes config set model.base_url https://openrouter.ai/api/v1
 
@@ -22,6 +22,14 @@ jobs:
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: hermes chat -q "stock-analysis 스킬로 10종목 분석"
+
+      - name: Debug Secrets
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo "Bot token length: ${#TELEGRAM_BOT_TOKEN}"
+          echo "Chat ID: '${TELEGRAM_CHAT_ID}'"
 
       - name: Send Telegram Notification
         env:
