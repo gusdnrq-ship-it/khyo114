@@ -11,11 +11,22 @@ jobs:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      # Hermes 모델 설정 강제 지정
+      HERMES_MODEL: google/gemini-2.5-flash
+      HERMES_PROVIDER: google
     steps:
       - name: Install Hermes
         run: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+
+      - name: Configure Hermes Model
+        run: |
+          hermes config set model.default google/gemini-2.5-flash
+          hermes config set model.provider google
+          hermes config set model.base_url https://generativelanguage.googleapis.com/v1beta
+
       - name: Run Stock Analysis
         run: hermes chat -q "stock-analysis 스킬로 10종목 분석"
+
       - name: Send Telegram Notification
         uses: appleboy/telegram-action@master
         with:
