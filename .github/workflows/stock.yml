@@ -11,7 +11,6 @@ jobs:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      # Hermes 모델 설정 강제 지정
       HERMES_MODEL: google/gemini-2.5-flash
       HERMES_PROVIDER: google
     steps:
@@ -28,8 +27,9 @@ jobs:
         run: hermes chat -q "stock-analysis 스킬로 10종목 분석"
 
       - name: Send Telegram Notification
-        uses: appleboy/telegram-action@master
+        uses: appleboy/telegram-action@v1.1.1
         with:
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           message: "📊 일일 주식 리포트 완료"
+          format: markdown
