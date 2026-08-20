@@ -1,0 +1,401 @@
+name: Daily Stock Analysis Pipeline
+
+on:
+  schedule:
+    # 09:30 KST = 00:30 UTC
+    - cron: '30 0 * * *'
+    # 07:00 KST = 22:00 UTC (previous day) - News filtering
+    - cron: '0 22 * * 0-4'
+    # 10:00 KST = 01:00 UTC - Skill hub monitoring
+    - cron: '0 1 * * *'
+    # 02:00 KST = 17:00 UTC (previous day) - Obsidian organize
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      job_type:
+        description: 'Which job to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - fundamental
+          - technical
+          - news
+          - skillhub
+          - obsidian
+
+env:
+  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+  OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+  LANG: ko_KR.UTF-8
+  LC_ALL: ko_KR.UTF-8
+  PYTHONIOENCODING: utf-8
+
+jobs:
+  # ============================================================
+  # 1. Fundamental + Technical Integrated (09:30 KST)
+  # ============================================================
+  integrated-analysis:
+    if: github.event_name == 'schedule' || inputs.job_type == 'all' || inputs.job_type == 'fundamental'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+          echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas numpy pyyaml
+
+      - name: Configure Hermes (Google Gemini 직접 사용 - 무료, 크레딧 불필요)
+        run: |
+          hermes config set model.default gemini-2.5-flash
+          hermes config set model.provider google
+          hermes config set cron.model gemini-2.5-flash
+          hermes config set cron.model_provider google
+
+      - name: Run Integrated Analysis (Fundamental + Technical)
+        run: |
+          hermes chat -q "
+          stock-analysis 스킬로 10종목 분석 후 기술적 분석 5종목 백테스트 수행
+
+          ## 1단계: 펀더멘털 분석 (stock-analysis)
+          대상 10종목:
+          - 국내: 삼성전자(005930), KODEX 200(252670), TIGER K방산&우주(453830), 토박스코리아(225460), SKC(011790)
+          - 해외: NVDY, NVDA, QQQ, TQQQ, AAPL
+
+          ## 2단계: 기술적 분석 (technical-trading)
+          쌍굴파기 이중 볼린저밴드 백테스트 + 현재 시그널:
+          - 삼성전자(005930), NVDA, 우리로(046970), SKC(011790), TIGER K방산&우주(453830)
+
+          ## 3단계: 통합 리포트 생성
+          - 펀더멘털 요약 + 기술적 요약
+          - Obsidian 저장 경로 포함
+          " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider google --model gemini-2.5-flash
+
+      - name: Commit and Push Reports
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 주식분석/ || true
+          git commit -m "📊 일일 주식 분석 리포트 $(date +%Y%m%d)" || true
+          git push || true
+
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            📊 [GitHub Actions] 일일 주식 분석 완료
+            실행시간: ${{ github.run_started_at }}
+            상태: ${{ job.status }}
+            리포: 주식분석/ 폴더 확인 (GitHub에 커밋됨)
+
+  # ============================================================
+  # 2. News/Disclosure Filtering (07:00 KST)
+  # ============================================================
+  news-filtering:
+    if: github.event_name == 'schedule' || inputs.job_type == 'all' || inputs.job_type == 'news'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+          echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas numpy pyyaml feedparser requests
+
+      - name: Configure Hermes (NVIDIA NIM with fallback)
+        run: |
+          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.provider nvidia
+          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
+          hermes config set fallback.provider nvidia
+
+      - name: Run News/Disclosure Filtering
+        run: |
+          hermes chat -q "
+          뉴스/공시 필터링 → 내 92종목만 추출 (매일 07:00 KST)
+
+          ## 내 보유 종목 티커
+          국내 49개: 005930, 000660, 011790, 046970, 252670, 453830, 225460, 373220, 006400, 035420, 035720, 005380, 051910, 005490, 068270, 096770, 207940, 012330, 017670, 033780, 009830, 010130, 024110, 032830, 034220, 047810, 058470, 066570, 091990, 105560, 138930, 145020, 161390, 192820, 214150, 214450, 247540, 251270, 267250, 285130, 293490, 302440, 316140, 326030, 340210, 352820, 357780, 365340
+          해외 43개: NVDA, NVDY, QQQ, TQQQ, AAPL, MSFT, GOOGL, AMZN, META, TSLA, AVGO, AMD, INTC, CRM, ORCL, ADBE, NFLX, CSCO, PEP, COST, TMUS, V, MA, JPM, BAC, WMT, HD, PG, JNJ, UNH, MRK, ABBV, PFE, TMO, DHR, ABT, LLY, BMY, AMGN, GILD, ISRG
+
+          ## 데이터 소스
+          1. DART 공시 (opendart.fss.or.kr RSS)
+          2. 네이버 금융 뉴스
+          3. 다음 금융 뉴스
+          4. Yahoo Finance 뉴스
+
+          ## 실행 로직
+          - 티커 매칭 → 중요도 스코어링 → LLM 요약 (매칭된 것만)
+          - Obsidian: 주식분석/뉴스/YYYYMMDD_내종목뉴스.md
+          - Telegram: 핵심 3줄 요약
+          " --skill stock-analysis,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+
+      - name: Commit and Push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 주식분석/뉴스/ || true
+          git commit -m "📰 뉴스 필터링 $(date +%Y%m%d)" || true
+          git push || true
+
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            📰 [GitHub Actions] 뉴스/공시 필터링 완료
+            상태: ${{ job.status }}
+
+  # ============================================================
+  # 3. Skill Hub Monitoring (10:00 KST)
+  # ============================================================
+  skill-hub-monitoring:
+    if: github.event_name == 'schedule' || inputs.job_type == 'all' || inputs.job_type == 'skillhub'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+          echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Configure Hermes (NVIDIA NIM with fallback)
+        run: |
+          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.provider nvidia
+          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
+          hermes config set fallback.provider nvidia
+
+      - name: Run Skill Hub Monitoring
+        run: |
+          hermes chat -q "
+          Hermes 스킬 허브 자동 모니터링 & 평가 (매일 10:00 KST)
+
+          ## 목적
+          공식 스킬 허브에서 신규/업데이트 스킬 감지 → 품질 평가 → 설치 제안
+
+          ## 실행 로직
+          1. 허브 스캔 (hermes skills check/browse/list)
+          2. 상위 10개 후보 상세 검토
+          3. hermes-agent-skill-authoring 7가지 기준 평가 (70점 이상)
+          4. requesting-code-review 보안 스캔
+          5. 설치 권장 스킬만 Telegram 요약 전송 + Obsidian 저장
+          " --skill hermes-agent-skill-authoring,requesting-code-review,hermes-agent --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+
+      - name: Commit and Push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 주식분석/스킬허브/ || true
+          git commit -m "🔍 스킬 허브 모니터링 $(date +%Y%m%d)" || true
+          git push || true
+
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            🔍 [GitHub Actions] 스킬 허브 모니터링 완료
+            상태: ${{ job.status }}
+
+  # ============================================================
+  # 4. Obsidian Vault Organize (02:00 KST)
+  # ============================================================
+  obsidian-organize:
+    if: github.event_name == 'schedule' || inputs.job_type == 'all' || inputs.job_type == 'obsidian'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+          echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Configure Hermes (NVIDIA NIM with fallback)
+        run: |
+          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.provider nvidia
+          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
+          hermes config set fallback.provider nvidia
+
+      - name: Run Obsidian Organize
+        run: |
+          hermes chat -q "
+          Obsidian 볼트 자동 정리 (5레벨/넘버링/태그) - 매일 02:00 KST
+
+          ## 대상
+          주식분석/ 볼트 (GitHub에 동기화된 상태)
+
+          ## 규칙
+          - 5레벨 법칙 (최대 5단계)
+          - 넘버링 법칙 (NN_ 접두사)
+          - 99번 아카이브 (종료 종목 격리)
+          - 유동적 규칙 (시간순 예외)
+          - 버전 관리 (v1.0/v1.1)
+          - 태그/프론트매터 자동 보완
+          - 양방향 링크 생성
+          " --skill obsidian,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+
+      - name: Commit and Push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 주식분석/ || true
+          git commit -m "🗂 Obsidian 볼트 정리 $(date +%Y%m%d)" || true
+          git push || true
+
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            🗂 [GitHub Actions] Obsidian 볼트 정리 완료
+            상태: ${{ job.status }}
+
+  # ============================================================
+  # 5. Technical Signal Snapshot (09:30 KST)
+  # ============================================================
+  technical-signal-snapshot:
+    if: github.event_name == 'schedule' || inputs.job_type == 'all' || inputs.job_type == 'technical'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+          echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas numpy pyyaml
+
+      - name: Configure Hermes (NVIDIA NIM with fallback)
+        run: |
+          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.provider nvidia
+          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
+          hermes config set fallback.provider nvidia
+
+      - name: Run Technical Signal Snapshot
+        run: |
+          hermes chat -q "
+          기술적 매매 시그널 스냅샷 (장중 30분마다 실행용 - GitHub에서는 1회 실행)
+
+          ## 대상 20종목
+          국내 12개: 005930, 000660, 011790, 046970, 252670, 453830, 225460, 373220, 006400, 035420, 035720, 005380
+          해외 8개: NVDA, NVDY, QQQ, TQQQ, AAPL, MSFT, GOOGL, AMZN
+
+          ## 쌍굴파기 이중 볼린저밴드 단계 진단
+          - 30분봉 BB(20,2) + BB(20,1)
+          - W-패턴 6단계 판별
+          - 시그널 발생 시에만 상세 요약
+
+          ## 저장
+          주식분석/{종목명}/{YYYYMMDD}_{종목명}_기술적.md
+          " --skill technical-trading,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+        continue-on-error: true
+
+      - name: Commit and Push
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 주식분석/ || true
+          git commit -m "🔔 기술적 시그널 스냅샷 $(date +%Y%m%d)" || true
+          git push || true
+
+      - name: Send Telegram Notification
+        if: always()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            🔔 [GitHub Actions] 기술적 시그널 스냅샷 완료
+            상태: ${{ job.status }}
+
+  # ============================================================
+  # Summary notification
+  # ============================================================
+  summary:
+    needs: [integrated-analysis, news-filtering, skill-hub-monitoring, obsidian-organize, technical-signal-snapshot]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Summary
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            ✅ [GitHub Actions] 일일 파이프라인 전체 완료
+            - 통합 분석: ${{ needs.integrated-analysis.result }}
+            - 뉴스 필터링: ${{ needs.news-filtering.result }}
+            - 스킬 허브: ${{ needs.skill-hub-monitoring.result }}
+            - Obsidian 정리: ${{ needs.obsidian-organize.result }}
+            - 기술적 시그널: ${{ needs.technical-signal-snapshot.result }}
+            실행 시각: ${{ github.run_started_at }}
