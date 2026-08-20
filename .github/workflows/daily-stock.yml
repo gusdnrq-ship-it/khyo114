@@ -61,6 +61,12 @@ jobs:
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.hermes/bin" >> $GITHUB_PATH
 
+      - name: Copy custom skills
+        run: |
+          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+
       - name: Install dependencies
         run: |
           pip install yfinance pandas numpy pyyaml
@@ -133,16 +139,20 @@ jobs:
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.hermes/bin" >> $GITHUB_PATH
 
+      - name: Copy custom skills
+        run: |
+          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+
       - name: Install dependencies
         run: |
           pip install yfinance pandas numpy pyyaml feedparser requests
 
-      - name: Configure Hermes (NVIDIA NIM with fallback)
+      - name: Configure Hermes (Google Gemini for news filtering)
         run: |
-          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
-          hermes config set model.provider nvidia
-          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
-          hermes config set fallback.provider nvidia
+          hermes config set model.default gemini-2.5-flash
+          hermes config set model.provider google
 
       - name: Run News/Disclosure Filtering
         run: |
@@ -163,7 +173,7 @@ jobs:
           - 티커 매칭 → 중요도 스코어링 → LLM 요약 (매칭된 것만)
           - Obsidian: 주식분석/뉴스/YYYYMMDD_내종목뉴스.md
           - Telegram: 핵심 3줄 요약
-          " --skill stock-analysis,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+          " --skill stock-analysis,hermes-stock-pipeline --provider google --model gemini-2.5-flash
 
       - name: Commit and Push
         if: always()
@@ -204,6 +214,12 @@ jobs:
         run: |
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Copy custom skills
+        run: |
+          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
@@ -267,6 +283,12 @@ jobs:
         run: |
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Copy custom skills
+        run: |
+          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
@@ -332,6 +354,12 @@ jobs:
         run: |
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.hermes/bin" >> $GITHUB_PATH
+
+      - name: Copy custom skills
+        run: |
+          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Install dependencies
         run: |
