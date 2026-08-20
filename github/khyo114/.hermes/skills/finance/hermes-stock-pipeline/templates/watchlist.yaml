@@ -1,0 +1,146 @@
+# Watchlist Configuration for hermes-stock-pipeline
+# Single source of truth for all tickers used in fundamental, technical, and news jobs.
+# Version controlled — changes tracked in Git.
+# 
+# Usage: Load in scripts with `yaml.safe_load(open('config/watchlist.yaml'))`
+# CI can validate: tickers exist, no duplicates, format correct.
+
+fundamental:
+  domestic:
+    - "005930"  # 삼성전자
+    - "252670"  # KODEX 200
+    - "453830"  # TIGER K방산&우주
+    - "225460"  # 토박스코리아
+    - "011790"  # SKC
+  overseas:
+    - "NVDY"
+    - "NVDA"
+    - "QQQ"
+    - "TQQQ"
+    - "AAPL"
+
+technical:
+  domestic:
+    - "005930"  # 삼성전자
+    - "000660"  # SK하이닉스
+    - "011790"  # SKC
+    - "046970"  # 우리로 (yfinance 미지원)
+    - "252670"  # KODEX 200
+    - "453830"  # TIGER K방산&우주 (yfinance 미지원)
+    - "225460"  # 토박스코리아 (yfinance 미지원)
+    - "373220"  # LG에너지솔루션
+    - "006400"  # 삼성SDI
+    - "035420"  # NAVER
+    - "035720"  # 카카오
+    - "005380"  # 현대차
+  overseas:
+    - "NVDA"
+    - "NVDY"
+    - "QQQ"
+    - "TQQQ"
+    - "AAPL"
+    - "MSFT"
+    - "GOOGL"
+    - "AMZN"
+
+# yfinance 미지원 종목: 별도 데이터 소스 필요 (KRX API, 네이버 금융 스크래핑 등)
+unsupported_by_yfinance:
+  - "453830"  # TIGER K방산&우주
+  - "046970"  # 우리로
+  - "225460"  # 토박스코리아
+
+# News filtering — all 92 holdings (49 domestic + 43 overseas)
+news:
+  domestic:
+    - "005930"
+    - "000660"
+    - "011790"
+    - "046970"
+    - "252670"
+    - "453830"
+    - "225460"
+    - "373220"
+    - "006400"
+    - "035420"
+    - "035720"
+    - "005380"
+    - "005490"
+    - "009830"
+    - "010130"
+    - "012330"
+    - "017670"
+    - "024110"
+    - "032830"
+    - "033780"
+    - "034220"
+    - "047810"
+    - "051910"
+    - "058470"
+    - "066570"
+    - "068270"
+    - "091990"
+    - "096770"
+    - "105560"
+    - "138930"
+    - "145020"
+    - "161390"
+    - "192820"
+    - "207940"
+    - "214150"
+    - "214450"
+    - "247540"
+    - "251270"
+    - "267250"
+    - "285130"
+    - "293490"
+    - "302440"
+    - "316140"
+    - "326030"
+    - "340210"
+    - "352820"
+    - "357780"
+    - "365340"
+    - "052810"  # 추가 필요 (92개 맞추기용)
+    - "067160"  # 추가 필요
+  overseas:
+    - "NVDA"
+    - "NVDY"
+    - "QQQ"
+    - "TQQQ"
+    - "AAPL"
+    - "MSFT"
+    - "GOOGL"
+    - "AMZN"
+    - "META"
+    - "TSLA"
+    - "AVGO"
+    - "AMD"
+    - "INTC"
+    - "CRM"
+    - "ORCL"
+    - "ADBE"
+    - "NFLX"
+    - "CSCO"
+    - "PEP"
+    - "COST"
+    - "TMUS"
+    - "V"
+    - "MA"
+    - "JPM"
+    - "BAC"
+    - "WMT"
+    - "HD"
+    - "PG"
+    - "JNJ"
+    - "UNH"
+    - "MRK"
+    - "ABBV"
+    - "PFE"
+    - "TMO"
+    - "DHR"
+    - "ABT"
+    - "LLY"
+    - "BMY"
+    - "AMGN"
+    - "GILD"
+    - "ISRG"

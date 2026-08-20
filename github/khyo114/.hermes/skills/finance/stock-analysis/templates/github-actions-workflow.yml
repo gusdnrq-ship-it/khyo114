@@ -1,0 +1,46 @@
+# GitHub Actions 워크플로우 템플릿 - 일일 주식 분석
+# .github/workflows/stock.yml에 저장
+
+name: Daily Stock
+on:
+  schedule:
+    - cron: '30 0 * * *'  # UTC 00:30 = KST 09:30
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hermes
+        run: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+      
+      - name: Configure Hermes Model (OpenRouter Free)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          hermes config set model.default google/gemma-2-9b-it:free
+          hermes config set model.provider openrouter
+          hermes config set model.base_url https://openrouter.ai/api/v1
+      
+      - name: Run Stock Analysis
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: hermes chat -q "stock-analysis 스킬로 10종목 분석"
+      
+      - name: Send Telegram Notification
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          if [ -z "${TELEGRAM_CHAT_ID}" ]; then
+            echo "ERROR: TELEGRAM_CHAT_ID is empty!"
+            exit 1
+          fi
+          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d chat_id="${TELEGRAM_CHAT_ID}" \
+            -d text="📊 일일 주식 리포트 완료" \
+            -d parse_mode="Markdown"
+
+# 필수 GitHub Secrets:
+# - OPENROUTER_API_KEY (필수 - https://openrouter.ai/keys)
+# - TELEGRAM_BOT_TOKEN (필수 - @BotFather에서 발급)
+# - TELEGRAM_CHAT_ID (필수 - @userinfobot에서 확인, 숫자만)
