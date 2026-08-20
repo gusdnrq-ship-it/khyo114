@@ -25,6 +25,10 @@ on:
           - skillhub
           - obsidian
 
+permissions:
+  contents: write
+  actions: read
+
 env:
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
   OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
