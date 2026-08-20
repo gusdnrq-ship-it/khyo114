@@ -63,9 +63,9 @@ jobs:
 
       - name: Copy custom skills
         run: |
-          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Install dependencies
         run: |
@@ -141,9 +141,9 @@ jobs:
 
       - name: Copy custom skills
         run: |
-          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Install dependencies
         run: |
@@ -217,9 +217,9 @@ jobs:
 
       - name: Copy custom skills
         run: |
-          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
@@ -286,9 +286,9 @@ jobs:
 
       - name: Copy custom skills
         run: |
-          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
@@ -357,9 +357,9 @@ jobs:
 
       - name: Copy custom skills
         run: |
-          cp -r .hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
-          cp -r .hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/stock-analysis ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/hermes-stock-pipeline ~/.hermes/skills/finance/
+          cp -r github/khyo114/.hermes/skills/finance/technical-trading ~/.hermes/skills/finance/
 
       - name: Install dependencies
         run: |
