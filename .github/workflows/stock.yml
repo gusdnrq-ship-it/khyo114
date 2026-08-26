@@ -10,11 +10,11 @@ jobs:
       - name: Install Hermes
         run: curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
-      - name: Configure Hermes Model (OpenRouter Free)
+      - name: Configure Hermes Model (OpenRouter Free - NVIDIA NIM)
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          hermes config set model.default meta-llama/llama-3.1-8b-instruct:free
+          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b:free
           hermes config set model.provider openrouter
           hermes config set model.base_url https://openrouter.ai/api/v1
 
