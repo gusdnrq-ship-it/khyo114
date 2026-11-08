@@ -225,8 +225,18 @@ jobs:
         run: |
           hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
           hermes config set model.provider nvidia
-          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
-          hermes config set fallback.provider nvidia
+          # fallback: model.fallback_chain (list format, current schema)
+          python - <<'EOF'
+          import yaml
+          from pathlib import Path
+          p = Path.home() / '.hermes' / 'config.yaml'
+          cfg = yaml.safe_load(p.read_text()) if p.exists() else {}
+          cfg.setdefault('model', {})
+          cfg['model']['fallback_chain'] = [
+              {'provider': 'nvidia', 'model': 'nvidia/llama-3.1-nemotron-70b-instruct'}
+          ]
+          p.write_text(yaml.safe_dump(cfg, allow_unicode=True))
+          EOF
 
       - name: Run Skill Hub Monitoring
         run: |
@@ -294,8 +304,18 @@ jobs:
         run: |
           hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
           hermes config set model.provider nvidia
-          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
-          hermes config set fallback.provider nvidia
+          # fallback: model.fallback_chain (list format, current schema)
+          python - <<'EOF'
+          import yaml
+          from pathlib import Path
+          p = Path.home() / '.hermes' / 'config.yaml'
+          cfg = yaml.safe_load(p.read_text()) if p.exists() else {}
+          cfg.setdefault('model', {})
+          cfg['model']['fallback_chain'] = [
+              {'provider': 'nvidia', 'model': 'nvidia/llama-3.1-nemotron-70b-instruct'}
+          ]
+          p.write_text(yaml.safe_dump(cfg, allow_unicode=True))
+          EOF
 
       - name: Run Obsidian Organize
         run: |
@@ -369,8 +389,18 @@ jobs:
         run: |
           hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
           hermes config set model.provider nvidia
-          hermes config set fallback.model nvidia/llama-3.1-nemotron-70b-instruct
-          hermes config set fallback.provider nvidia
+          # fallback: model.fallback_chain (list format, current schema)
+          python - <<'EOF'
+          import yaml
+          from pathlib import Path
+          p = Path.home() / '.hermes' / 'config.yaml'
+          cfg = yaml.safe_load(p.read_text()) if p.exists() else {}
+          cfg.setdefault('model', {})
+          cfg['model']['fallback_chain'] = [
+              {'provider': 'nvidia', 'model': 'nvidia/llama-3.1-nemotron-70b-instruct'}
+          ]
+          p.write_text(yaml.safe_dump(cfg, allow_unicode=True))
+          EOF
 
       - name: Run Technical Signal Snapshot
         run: |
