@@ -151,7 +151,7 @@ jobs:
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
-          hermes config set model.default nvidia/nemotron-3.5-lightning:free
+          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
           hermes config set model.provider nvidia
           hermes config set model.fallback_chain "- provider: nvidia
             model: nvidia/llama-3.1-nemotron-70b-instruct"
@@ -175,7 +175,7 @@ jobs:
           - 티커 매칭 → 중요도 스코어링 → LLM 요약 (매칭된 것만)
           - Obsidian: 주식분석/뉴스/YYYYMMDD_내종목뉴스.md
           - Telegram: 핵심 3줄 요약
-          " --skill stock-analysis,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3.5-lightning:free
+          " --skill stock-analysis,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
 
       - name: Commit and Push
         if: always()
