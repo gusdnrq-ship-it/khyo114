@@ -84,6 +84,7 @@ jobs:
 
       - name: Run Integrated Analysis (Fundamental + Technical)
         run: |
+          set +e
           hermes chat -q "
           stock-analysis 스킬로 10종목 분석 후 기술적 분석 5종목 백테스트 수행
 
@@ -111,6 +112,22 @@ jobs:
           통합 리포트 생성 후 Obsidian 주식분석/ 폴더 저장
           " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider google --model gemini-2.5-flash
           fi
+          if [ $rc -ne 0 ] && [ -n "$NVIDIA_API_KEY" ]; then
+            echo "Both Gemini attempts failed (rc=$rc). Falling back to NVIDIA NIM..."
+            hermes chat -q "
+          stock-analysis 스킬로 10종목 분석 후 기술적 분석 5종목 백테스트 수행 (NVIDIA 폴백)
+          대상 10종목: 국내 삼성전자(005930), KODEX 200(252670), TIGER K방산&우주(453830), 토박스코리아(225460), SKC(011790) / 해외 NVDA, QQQ, TQQQ, AAPL, NVDY
+          쌍굴파기 이중 볼린저밴드 백테스트 + 시그널: 삼성전자(005930), NVDA, 우리로(046970), SKC(011790), TIGER K방산&우주(453830)
+          통합 리포트 생성 후 Obsidian 주식분석/ 폴더 저장
+          " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+            rc=$?
+            if [ $rc -eq 0 ]; then
+              echo "NVIDIA fallback succeeded"
+            else
+              echo "NVIDIA fallback also failed (rc=$rc)"
+            fi
+          fi
+          exit $rc
 
       - name: Commit and Push Reports
         if: always()
