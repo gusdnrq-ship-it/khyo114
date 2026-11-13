@@ -75,8 +75,12 @@ jobs:
         run: |
           hermes config set model.default gemini-2.5-flash
           hermes config set model.provider google
+          hermes config set model.fallback_chain "- provider: nvidia
+            model: nvidia/nemotron-3-ultra-550b-a55b"
           hermes config set cron.model gemini-2.5-flash
           hermes config set cron.model_provider google
+          hermes config set cron.fallback_chain "provider=nvidia,model=nvidia/nemotron-3-ultra-550b-a55b"
+          [ -z "$NVIDIA_API_KEY" ] && echo "WARN: NVIDIA_API_KEY missing - fallback unavailable" || echo "NVIDIA fallback key configured"
 
       - name: Run Integrated Analysis (Fundamental + Technical)
         run: |
@@ -96,6 +100,17 @@ jobs:
           - 펀더멘털 요약 + 기술적 요약
           - Obsidian 저장 경로 포함
           " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider google --model gemini-2.5-flash
+          rc=$?
+          if [ $rc -ne 0 ]; then
+            echo "First attempt failed (rc=$rc). Retrying after 90s backoff..."
+            sleep 90
+            hermes chat -q "
+          stock-analysis 스킬로 10종목 분석 후 기술적 분석 5종목 백테스트 수행 (리트라이)
+          대상 10종목: 국내 삼성전자(005930), KODEX 200(252670), TIGER K방산&우주(453830), 토박스코리아(225460), SKC(011790) / 해외 NVDA, QQQ, TQQQ, AAPL, NVDY
+          쌍굴파기 이중 볼린저밴드 백테스트 + 시그널: 삼성전자(005930), NVDA, 우리로(046970), SKC(011790), TIGER K방산&우주(453830)
+          통합 리포트 생성 후 Obsidian 주식분석/ 폴더 저장
+          " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider google --model gemini-2.5-flash
+          fi
 
       - name: Commit and Push Reports
         if: always()
