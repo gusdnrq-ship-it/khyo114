@@ -76,10 +76,10 @@ jobs:
           hermes config set model.default gemini-2.5-flash
           hermes config set model.provider google
           hermes config set model.fallback_chain "- provider: nvidia
-            model: nvidia/nemotron-3-ultra-550b-a55b"
+            model: nvidia/llama-3.1-nemotron-70b-instruct"
           hermes config set cron.model gemini-2.5-flash
           hermes config set cron.model_provider google
-          hermes config set cron.fallback_chain "provider=nvidia,model=nvidia/nemotron-3-ultra-550b-a55b"
+          hermes config set cron.fallback_chain "provider=nvidia,model=nvidia/llama-3.1-nemotron-70b-instruct"
           [ -z "$NVIDIA_API_KEY" ] && echo "WARN: NVIDIA_API_KEY missing - fallback unavailable" || echo "NVIDIA fallback key configured"
 
       - name: Run Integrated Analysis (Fundamental + Technical)
@@ -120,7 +120,7 @@ jobs:
           대상 10종목: 국내 삼성전자(005930), KODEX 200(252670), TIGER K방산&우주(453830), 토박스코리아(225460), SKC(011790) / 해외 NVDA, QQQ, TQQQ, AAPL, NVDY
           쌍굴파기 이중 볼린저밴드 백테스트 + 시그널: 삼성전자(005930), NVDA, 우리로(046970), SKC(011790), TIGER K방산&우주(453830)
           통합 리포트 생성 후 Obsidian 주식분석/ 폴더 저장
-            " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+            " --skill stock-analysis,technical-trading,hermes-stock-pipeline --provider nvidia --model nvidia/llama-3.1-nemotron-70b-instruct
             if [ $rc -eq 0 ]; then
               echo "NVIDIA fallback succeeded"
             else
@@ -183,7 +183,7 @@ jobs:
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
-          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.default nvidia/llama-3.1-nemotron-70b-instruct
           hermes config set model.provider nvidia
           hermes config set model.fallback_chain "- provider: nvidia
             model: nvidia/llama-3.1-nemotron-70b-instruct"
@@ -207,7 +207,7 @@ jobs:
           - 티커 매칭 → 중요도 스코어링 → LLM 요약 (매칭된 것만)
           - Obsidian: 주식분석/뉴스/YYYYMMDD_내종목뉴스.md
           - Telegram: 핵심 3줄 요약
-          " --skill stock-analysis,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+          " --skill stock-analysis,hermes-stock-pipeline --provider nvidia --model nvidia/llama-3.1-nemotron-70b-instruct
 
       - name: Commit and Push
         if: always()
@@ -257,7 +257,7 @@ jobs:
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
-          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.default nvidia/llama-3.1-nemotron-70b-instruct
           hermes config set model.provider nvidia
           hermes config set model.fallback_chain "- provider: nvidia
             model: nvidia/llama-3.1-nemotron-70b-instruct"
@@ -276,7 +276,7 @@ jobs:
           3. hermes-agent-skill-authoring 7가지 기준 평가 (70점 이상)
           4. requesting-code-review 보안 스캔
           5. 설치 권장 스킬만 Telegram 요약 전송 + Obsidian 저장
-          " --skill hermes-agent-skill-authoring,requesting-code-review,hermes-agent --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+          " --skill hermes-agent-skill-authoring,requesting-code-review,hermes-agent --provider nvidia --model nvidia/llama-3.1-nemotron-70b-instruct
 
       - name: Commit and Push
         if: always()
@@ -326,7 +326,7 @@ jobs:
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
-          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.default nvidia/llama-3.1-nemotron-70b-instruct
           hermes config set model.provider nvidia
           hermes config set model.fallback_chain "- provider: nvidia
             model: nvidia/llama-3.1-nemotron-70b-instruct"
@@ -347,7 +347,7 @@ jobs:
           - 버전 관리 (v1.0/v1.1)
           - 태그/프론트매터 자동 보완
           - 양방향 링크 생성
-          " --skill obsidian,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+          " --skill obsidian,hermes-stock-pipeline --provider nvidia --model nvidia/llama-3.1-nemotron-70b-instruct
 
       - name: Commit and Push
         if: always()
@@ -401,7 +401,7 @@ jobs:
 
       - name: Configure Hermes (NVIDIA NIM with fallback)
         run: |
-          hermes config set model.default nvidia/nemotron-3-ultra-550b-a55b
+          hermes config set model.default nvidia/llama-3.1-nemotron-70b-instruct
           hermes config set model.provider nvidia
           hermes config set model.fallback_chain "- provider: nvidia
             model: nvidia/llama-3.1-nemotron-70b-instruct"
@@ -422,7 +422,7 @@ jobs:
 
           ## 저장
           주식분석/{종목명}/{YYYYMMDD}_{종목명}_기술적.md
-          " --skill technical-trading,hermes-stock-pipeline --provider nvidia --model nvidia/nemotron-3-ultra-550b-a55b
+          " --skill technical-trading,hermes-stock-pipeline --provider nvidia --model nvidia/llama-3.1-nemotron-70b-instruct
         continue-on-error: true
 
       - name: Commit and Push
