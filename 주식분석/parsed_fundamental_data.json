@@ -1,0 +1,585 @@
+{
+  "005930": {
+    "code": "005930",
+    "name": "삼성전자",
+    "sector": "반도체_전자",
+    "market": "국내",
+    "basic": {},
+    "company": {
+      "영업이익": "영업이익/매출액(수익)"
+    },
+    "valuation": {
+      "EPS": "22292",
+      "BPS": "86052",
+      "PER": "8.83",
+      "업종PER": "6.24",
+      "PBR": "2.29",
+      "현금배당수익률": "0.85%"
+    },
+    "financial": {},
+    "news": []
+  },
+  "252670": {
+    "code": "252670",
+    "name": "KODEX 200",
+    "sector": "ETF_지수",
+    "market": "국내",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": []
+  },
+  "453830": {
+    "code": "453830",
+    "name": "TIGER K방산우주",
+    "sector": "ETF_방산우주",
+    "market": "국내",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": []
+  },
+  "225460": {
+    "code": "225460",
+    "name": "토박스코리아",
+    "sector": "유통_소비재",
+    "market": "국내",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": []
+  },
+  "011790": {
+    "code": "011790",
+    "name": "SKC",
+    "sector": "화학_소재",
+    "market": "국내",
+    "basic": {},
+    "company": {
+      "영업이익": "영업이익/매출액(수익)"
+    },
+    "valuation": {
+      "EPS": "-20562",
+      "BPS": "41073",
+      "PER": "N/A",
+      "업종PER": "2202.52",
+      "PBR": "1.74",
+      "현금배당수익률": "0.00%"
+    },
+    "financial": {},
+    "news": []
+  },
+  "NVDY": {
+    "code": "NVDY",
+    "name": "NVDY",
+    "sector": "ETF_커버드콜",
+    "market": "해외",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": [
+      {
+        "title": "NVDY270219C00015000 Interactive Stock Chart | NVDY Feb 2027 15.000 call Stock - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40eEhkeWxrT1l3RTBtR2J5OTZ0akRIT21sTnlUX2lyN3RQZmpEZldvdVBkeTlSa1RLV2RKQ08xQks2UDk4cnJxQUJzc2h5YmpXdWR6bzd2djNIY1hLbEpWWA?oc=5",
+        "date": "Fri, 13 Nov 2026 20:13:56 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE40eEhkeWxrT1l3RTBtR2J5OTZ0akRIT21sTnlUX2lyN3RQZmpEZldvdVBkeTlSa1RLV2RKQ08xQks2UDk4cnJxQUJzc2h5YmpXdWR6bzd2djNIY1hLbEpWWA?oc=5\" target=\"_blan"
+      },
+      {
+        "title": "NVDY: Harvesting Income From NVDA's -30% Drawdown (NYSEARCA:NVDY) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUmg1NzRoSlZrejhQQ1BHSmRwMFZxeGxINF9HaUFxWEJlVEZHRUMzY2tudTZEWDF3NlFQd3RjNHBhXzgtVVhjbktvQXpsZjZOa3oyd1lJajBrXzFleUpiRFpXc1FydU5FSmpzd053TVZNbmxfMzUwamVWa2xPTUg1ZTE0WU5TcXlRaVU2YS1CeU8tb1B1bWg2OWJYNExEQVN5emc?oc=5",
+        "date": "Wed, 11 Nov 2026 08:33:17 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPUmg1NzRoSlZrejhQQ1BHSmRwMFZxeGxINF9HaUFxWEJlVEZHRUMzY2tudTZEWDF3NlFQd3RjNHBhXzgtVVhjbktvQXpsZjZOa3oyd1lJajBrXzFleUpiRFpXc1FydU5FSmpzd053TV"
+      },
+      {
+        "title": "NVDY Investors Chose Monthly Income Over 854% Returns; Here’s What That Trade Cost Them - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPeWRKWWVDRjJEVEFFbnRuUXdGTllYSThDdnRQdFJiNlk3d1Z2R3RnYll1YzJ1YkJDY0RfaVk2Q0hpc1dKWC1LTW1EOXhKbVJFRkI4Z2g0QkN6Y2NGLVNJdU03OV9jME82XzJxVmxaYVBjeVhNQmJjMDdZVWRvN0NIR3pja0o2TjQzYUNWMVFZZlNMU2VNTExaT3ZUSEgtM21oRzFj?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxPeWRKWWVDRjJEVEFFbnRuUXdGTllYSThDdnRQdFJiNlk3d1Z2R3RnYll1YzJ1YkJDY0RfaVk2Q0hpc1dKWC1LTW1EOXhKbVJFRkI4Z2g0QkN6Y2NGLVNJdU03OV9jME82XzJxVmxaYV"
+      },
+      {
+        "title": "How (NVDY) Movements Inform Risk Allocation Models - Stock Traders Daily",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWi1mM1lXa0JRWVJVajJ0VHRaanFZMkhVUVN1ZW43MzZIWTBhbkFPSG04dGNFZktraWNfa0pmdmZYa1Z4Vl9SSmdPTktYZmhuTXNlbzk4NGt0UzhTVXRZZy00TVhEQjhybG91czNaeVlZTGN5SDBlSDRIWUEwQUpEcHhFUWdYSEJkeGwwdmxwaUZMd1RNaE5CVGV2bzBEcXR0M0g2WnVsYk0xMTVvenRwRHZkUmhIRmhIb0dWdmNYc0FYRlFINzhB?oc=5",
+        "date": "Sun, 15 Nov 2026 07:36:02 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxNWi1mM1lXa0JRWVJVajJ0VHRaanFZMkhVUVN1ZW43MzZIWTBhbkFPSG04dGNFZktraWNfa0pmdmZYa1Z4Vl9SSmdPTktYZmhuTXNlbzk4NGt0UzhTVXRZZy00TVhEQjhybG91czNaeV"
+      },
+      {
+        "title": "NVDY - YieldMax NVDA Option Income Strategy ETF Stock Price and Quote - Finviz",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kMFhtQ2owdzlxMFVyOUR6TlY2MmFMQlJUYmN2WUN2Z1BwWmFhVHl3M0RyV1Q2UTJnNkhPRi1NaDRnZUE2RXc?oc=5",
+        "date": "Thu, 28 May 2026 09:06:34 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kMFhtQ2owdzlxMFVyOUR6TlY2MmFMQlJUYmN2WUN2Z1BwWmFhVHl3M0RyV1Q2UTJnNkhPRi1NaDRnZUE2RXc?oc=5\" target=\"_blank\">NVDY - YieldMax NVDA Option Inco"
+      },
+      {
+        "title": "Why NVDY Shareholders Miss Half of NVIDIA’s Explosive Moves in Strong Months - 24/7 Wall St.",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2dINVQxazZKQ0JSV1pMYi1jZXJFdjN5bTNqTUNUUXQxNHNyVFkxUUs3OEVOMXNHNElfMGRybjRyX1YxOGVKcnB1Rm56UEFHNC1hazBZMm0wY1BKeGNOemdfZmNKMnpsYWJvZXNyZDlOVVBWeFdTTHNrb2Y5YVRjZzlKTWJ2aUV5cFFBVlJwQkkzYjRfX0lqSHAxN1hPQVktZ1RCbldMYjVIaHBsbHZJbnY2bVRUdDdiTGEw?oc=5",
+        "date": "Sat, 30 May 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ2dINVQxazZKQ0JSV1pMYi1jZXJFdjN5bTNqTUNUUXQxNHNyVFkxUUs3OEVOMXNHNElfMGRybjRyX1YxOGVKcnB1Rm56UEFHNC1hazBZMm0wY1BKeGNOemdfZmNKMnpsYWJvZXNyZD"
+      },
+      {
+        "title": "NVDY Sells NVIDIA’s Best Days Each Month to Fund Its 60 Percent Distribution - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMW9Cd0xUY1NEcE50dFEyakZpbkRwcS1BYzZxWk0zMlBDY3dhUnpPd3BZSE8xX3BrSmtfZEV4Tkh4Sl9HeS1falh3eEdoTDhqTkVkMFlGUGlVMlNOdEdGMmZIZDJTTWYwOHFlQ0hJcnhENTZXRDhRX0JVVXRsVVYzbF84N2EzYTN1Nmlxclk3MXdzdW1MVC1PSg?oc=5",
+        "date": "Wed, 20 May 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOMW9Cd0xUY1NEcE50dFEyakZpbkRwcS1BYzZxWk0zMlBDY3dhUnpPd3BZSE8xX3BrSmtfZEV4Tkh4Sl9HeS1falh3eEdoTDhqTkVkMFlGUGlVMlNOdEdGMmZIZDJTTWYwOHFlQ0hJcn"
+      },
+      {
+        "title": "NVDY Isn't The Fund It Was - Because Nvidia Isn't The Stock It Was (NYSEARCA:NVDY) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTXRIOExva3RmOEJoRl9hZDlsbk43YXJUQmlxajNLaWZYVllRVTlZTjJ6S3lYMDZqNHMyeXVPa2NvT25wd2tvZFcwcEtxVkFqaExKODctY0pVTFF0UVVFZUUzazlsLVJCejBtTnJUUl9FV1JUUWNqcXd4WEQwektoTk5EdVJPMWk3RTllZUFMOHV5cnJsbmF3Q1E3c2FvQUZqWTJyOWNJU2plUEdHaUREUmpQNFhvdXRQaVE?oc=5",
+        "date": "Wed, 19 Aug 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNTXRIOExva3RmOEJoRl9hZDlsbk43YXJUQmlxajNLaWZYVllRVTlZTjJ6S3lYMDZqNHMyeXVPa2NvT25wd2tvZFcwcEtxVkFqaExKODctY0pVTFF0UVVFZUUzazlsLVJCejBtTnJUUl"
+      },
+      {
+        "title": "NVDY Offers 77% Yield on Nvidia Exposure, But You’re Getting Your Own Capital Back - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5FMXBjQkdVbmN6eVVGN3BWTGpRVU56djRiRWF2MzNZbzZUMUNadGEyRExNb0hJNENJZm5mNGhJWnJHZTRWX3l5ODByNHBJVGpnVmxOZi12RjZyWm9OcXFyUFRZY2ZfYjkyclF2eEpNRWdibFU4U1FhUjQwZW56UQ?oc=5",
+        "date": "Mon, 16 Mar 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE5FMXBjQkdVbmN6eVVGN3BWTGpRVU56djRiRWF2MzNZbzZUMUNadGEyRExNb0hJNENJZm5mNGhJWnJHZTRWX3l5ODByNHBJVGpnVmxOZi12RjZyWm9OcXFyUFRZY2ZfYjkyclF2eEpNRW"
+      },
+      {
+        "title": "NVDY: Why Keeping It Simple By Staying Long Nvidia Shares Makes Sense - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZWhac1hGZUVXcEgxbDlleEhQQ0Z0ZkpSWUQ0SjVEcEJQOUlmNVJDeU1JWmNxZTZRU3hYTDMwMVZXQ010MVA3WERjVmoxcHVOdFdqUGRjNXZqNmsySzlBVGFtRklFRF9hanhzOFFBOTVCc1pSZ0Fka281ejFHb2NIOGNPaS1hcWxoM0Ezam1RMWlUbGRLYmhCTm9Za2ZHNThES2p4eU9jVG5fVXJVQ0E?oc=5",
+        "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxNZWhac1hGZUVXcEgxbDlleEhQQ0Z0ZkpSWUQ0SjVEcEJQOUlmNVJDeU1JWmNxZTZRU3hYTDMwMVZXQ010MVA3WERjVmoxcHVOdFdqUGRjNXZqNmsySzlBVGFtRklFRF9hanhzOFFBOT"
+      },
+      {
+        "title": "39% Yield from the YieldMax NVDA Option Income Strategy ETF (NVDY): Real or Fake? - 24/7 Wall St.",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNM3JUb2VHZ0F6am5mM1RmZ0xRVHc1UG80WmVKRUMtZ0x4cEszZG5XdXJRZ0lLblVjdGVDb21jQ1ZsanBjbE9OX3g0RUl6R0hGUnNXNXdCTUdIdW9NLXBFclBGaDVLQmVnMUVmZE4wNXFPbFZaeTdMenJaQTYxdGNrMnNQZF9tVTJfeXFXbnJ4anhfTkprTFJ2V3FIUllMVlZTd0FzUWh4Z0Z6ODUwLU1VOTRrdVpRRWQwd3VqYw?oc=5",
+        "date": "Wed, 18 Feb 2026 08:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNM3JUb2VHZ0F6am5mM1RmZ0xRVHc1UG80WmVKRUMtZ0x4cEszZG5XdXJRZ0lLblVjdGVDb21jQ1ZsanBjbE9OX3g0RUl6R0hGUnNXNXdCTUdIdW9NLXBFclBGaDVLQmVnMUVmZE4wNX"
+      },
+      {
+        "title": "The 1.09% Fee Dilemma: Is NVDY Income Worth the Opportunity Cost? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ1pXeVJ5WWdWdjJVNmFDVjhsdE9TeENKRS1oLWZHWTBZVXBHM2ZiN1Z0LTcySXJNeXFOTzB2bXR3YVJZYzYxX0FJYlhHcnpJNkdNREtPS1JKeFhzR3BySUNuaEx3eDRkbVhqaFV0QV9rREdQTTVDQkV6SU42dDNxYmFhVW5jeDM1bHhIYW5QNko?oc=5",
+        "date": "Tue, 30 Jun 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ1pXeVJ5WWdWdjJVNmFDVjhsdE9TeENKRS1oLWZHWTBZVXBHM2ZiN1Z0LTcySXJNeXFOTzB2bXR3YVJZYzYxX0FJYlhHcnpJNkdNREtPS1JKeFhzR3BySUNuaEx3eDRkbVhqaFV0QV"
+      },
+      {
+        "title": "Why NVDY Shareholders Miss Half of NVIDIA’s Explosive Moves in Strong Months - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZTV1ZmIxMldVTHVhaG5OV01HNmFDVkZhR3hNRFdfbVFHRUtFWjJLVVpadlhFeWlEM2ZzbXh3dTctMk1JY1d3WDBMbTBGbkJXdG1XaDlzS0hHQjUxX3Bnblc3Q1hYS0NmUTJKTks1RWtzbE9xMUY5VklLSUMtYWxhZlJyT0stTnlva0hzYTdHUjJzd0x3M1BheHFxdk9Ldw?oc=5",
+        "date": "Sat, 30 May 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxPZTV1ZmIxMldVTHVhaG5OV01HNmFDVkZhR3hNRFdfbVFHRUtFWjJLVVpadlhFeWlEM2ZzbXh3dTctMk1JY1d3WDBMbTBGbkJXdG1XaDlzS0hHQjUxX3Bnblc3Q1hYS0NmUTJKTks1RW"
+      },
+      {
+        "title": "NVDY ETF: Weekly Payouts Likely To Decrease (NYSEARCA:NVDY) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYm9HWlN6TFE2ZF9rTVJ1OGRxcmFGSWxKRFU0QWhTQjZ6TGZJRmVOSjFhWE1qa1BWQjhnYjl4OFMzeHJJTXJIcVl6M0tlN3VjRWU2dm8zNzRzeVhDQW5jUzhGNnpScUhJVE90XzlFMFZMd1I0bEprYWtRTS0wS1l4ZVVJUFdMS0pxZmZB?oc=5",
+        "date": "Thu, 04 Dec 2025 08:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYm9HWlN6TFE2ZF9rTVJ1OGRxcmFGSWxKRFU0QWhTQjZ6TGZJRmVOSjFhWE1qa1BWQjhnYjl4OFMzeHJJTXJIcVl6M0tlN3VjRWU2dm8zNzRzeVhDQW5jUzhGNnpScUhJVE90XzlFMF"
+      },
+      {
+        "title": "TSLY Pays More Each Week Than NVDY but Holders Are Losing Money Faster - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3dIV1I5X3E1VERCdUZxZ0VsSEVLSEl1V1FXd0pRMy1HU1lkU1VrUklOblFvQjNEcXFkc3lGLWNsbXcyNWdySEE3Tmx6U3YzWlczVmxhVndjMUhlMzRWWi1GQVA4QlJpV0xIYl8yYlZkazFISzlIN3NsbEdiUmpON3BOdWdPblZhZ2UyS3hjNl9qUEta?oc=5",
+        "date": "Fri, 21 Aug 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNU3dIV1I5X3E1VERCdUZxZ0VsSEVLSEl1V1FXd0pRMy1HU1lkU1VrUklOblFvQjNEcXFkc3lGLWNsbXcyNWdySEE3Tmx6U3YzWlczVmxhVndjMUhlMzRWWi1GQVA4QlJpV0xIYl8yYl"
+      }
+    ]
+  },
+  "NVDA": {
+    "code": "NVDA",
+    "name": "엔비디아",
+    "sector": "반도체_AI",
+    "market": "해외",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": [
+      {
+        "title": "Nvidia live updates: Interim CEO Kress prepares for Q3 earnings, with Huang reportedly planning comeback - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdXFsd2l6azZDWWJyWDItT0hudzBhMUloOWF4V3FMV1ZlTUhsODg4d0RoY1ZuaXNJeExyWFNjallKQ2wzcW13ektmSzdwTjFYeUxrUkp2T3lPTG5raHY4Q0FEcWhnTmxCLXVYd2hwU05UOXdKcXFobjhRZFpXS3VqQmhsS0pGMFhQY1ZzMW9LS3ZvNGU4bTlJVDdXSTRWYkljem1mSUp0ekNsWWREb0R6OGZnYnM1YzBJTWlFTU1vZG1ubjV5Q2lkZTE2M3JrSWRQam0wb20zZ0Jad1Vud2FaX1Q4NjlncDRIbHQ2Mk5tYjM?oc=5",
+        "date": "Mon, 16 Nov 2026 19:30:22 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdXFsd2l6azZDWWJyWDItT0hudzBhMUloOWF4V3FMV1ZlTUhsODg4d0RoY1ZuaXNJeExyWFNjallKQ2wzcW13ektmSzdwTjFYeUxrUkp2T3lPTG5raHY4Q0FEcWhnTmxCLXVYd2hwU0"
+      },
+      {
+        "title": "Trump’s accounts traded up to $97.5 million in Nvidia as Huang gained White House access - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRTBVdnBsa3dsRmN0X3c2YjR4REozem9ZUW5UcGx4WEdMTS1qYUhjbjNRU3J5UE81VjhPR0Q4cUV1UFBVSlUzSEtwTW5saFh0QTE3ZkJkZXF1V013cDFMaTNXRThwT2lBdkF0aVdxZXlIRXc4cFR4WXJjOTNMZUJZMtIBhgFBVV95cUxQMGFndkM3RUMtUkFEVDRPZmZmTHZVdXlVbl9GQ1RWY3dsMUhSVzE5SjNGcVJOLUVJb2szbmNudy1oZUVScGhoQklaUzdPV0hpTmZvYktWUFpBLXhVMnV3WG5PVkdIdTFDU1NKQ3o5al9TM1Q5VDE2Ul9GUFVEQWIwWUUzcFlTQQ?oc=5",
+        "date": "Mon, 16 Nov 2026 21:52:33 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNRTBVdnBsa3dsRmN0X3c2YjR4REozem9ZUW5UcGx4WEdMTS1qYUhjbjNRU3J5UE81VjhPR0Q4cUV1UFBVSlUzSEtwTW5saFh0QTE3ZkJkZXF1V013cDFMaTNXRThwT2lBdkF0aVdxZX"
+      },
+      {
+        "title": "Stock market drops amid continued Nvidia fallout - The Washington Post",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMEFFWkM0QU81aEJfWUszZ083R0l0MVEwOGJDTmF5MzJRRnI2eDhLd2RhaUoxVHRzSzRud3JKVEtsNmJmZWxrZkg0R3NpaVQ4QTJGZnZXZGstZy1OMl9TYXotOG41blRaTUVFd21xT2NLUlI1aTE0TThlb0tyX2lJbDE2MGczejYwcmU0UHNwbFd5UXZCYnRISGJXOEh4dXBNMnc?oc=5",
+        "date": "Tue, 17 Nov 2026 07:00:58 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxNMEFFWkM0QU81aEJfWUszZ083R0l0MVEwOGJDTmF5MzJRRnI2eDhLd2RhaUoxVHRzSzRud3JKVEtsNmJmZWxrZkg0R3NpaVQ4QTJGZnZXZGstZy1OMl9TYXotOG41blRaTUVFd21xT2"
+      },
+      {
+        "title": "The Nvidia share price is down 30% and UK investors are buying. I’m not convinced it’s a bargain - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOR25BeWt0Y2VoV0lpS3o0X1NUWFhtLWpNSHBKSHhPaTNaYzNOMnV2Vjh1VDI5UnZNNmsxNEhncVVrMVlyWWVkdDV6VHIwWUVRS04yR2hjRVQ1aUpiczVFekJEV0NQQlJTSkZHUFRrNml3Y0pQemRPaXRDc2hmWFZ0Ug?oc=5",
+        "date": "Tue, 17 Nov 2026 06:46:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOR25BeWt0Y2VoV0lpS3o0X1NUWFhtLWpNSHBKSHhPaTNaYzNOMnV2Vjh1VDI5UnZNNmsxNEhncVVrMVlyWWVkdDV6VHIwWUVRS04yR2hjRVQ1aUpiczVFekJEV0NQQlJTSkZHUFRrNm"
+      },
+      {
+        "title": "Jensen Huang Passed Billions in Nvidia Stock to His Heirs Months Before His Downfall - Barron's",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNWFN5S3RESUVaa0ExaEU4U2tfRDZYQVhhMnJLQW93aGp0WXFJbjl1WDE1WDkwdWxsM2lhNHpZM0Y3WHFEb2JnTlVndGM4c3BqLURseHN6cWtMaW1NaDVJRk40R3R6eGtaR3pzbmdRYlpPYU95MDNRLUhsV0hWY0VRa0FFcHN0SlhqNTgxTk8xZUp6VjA?oc=5",
+        "date": "Mon, 16 Nov 2026 19:26:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNWFN5S3RESUVaa0ExaEU4U2tfRDZYQVhhMnJLQW93aGp0WXFJbjl1WDE1WDkwdWxsM2lhNHpZM0Y3WHFEb2JnTlVndGM4c3BqLURseHN6cWtMaW1NaDVJRk40R3R6eGtaR3pzbmdRYl"
+      },
+      {
+        "title": "Trump Held Up to $83 Million in Nvidia Stock Before Price Dropped - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOdVdJMVc5Z2VFMkxZZEFtQ1ljcjl6NF9RR3U2Z3JLUjlMVC1rMjBlLS1NeExvdU9MZHVBcC1DaGZsd2lQOGt4dEQ0cG1va282emprTUUtaTRVdU1xbDNoRkFaakE1bkNtNGtJaThoVktJNmpyOUI3N1hmNFlBS1ZuYnE1aTNFMFZFQVVISHhDYWdzd21uZVFicHhGSVRRb29jRWJwMWtKRXJvSnRlOWN6Nk1ISkg4S3l4VnBERzVqWmkzeVZmYk1SZE9fQVBoZ0ZlNG5JdTFkN2c2bm1oUFM1VGNpMmJGcFBwVWF6SWNQaE1GTzk4bU11MTJXRFhta1gt?oc=5",
+        "date": "Mon, 16 Nov 2026 10:47:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAJBVV95cUxOdVdJMVc5Z2VFMkxZZEFtQ1ljcjl6NF9RR3U2Z3JLUjlMVC1rMjBlLS1NeExvdU9MZHVBcC1DaGZsd2lQOGt4dEQ0cG1va282emprTUUtaTRVdU1xbDNoRkFaakE1bkNtNGtJaThoVk"
+      },
+      {
+        "title": "Nasdaq 100 Plunges as Nvidia Earnings, Anthropic IPO on Horizon - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUWtEOGtHd0VyaHpJRnEzcDYtRklURlFfcFByaFNfQ2dhLVJTbkFoSklXeDd3X1dwdVRRR2JVYVRxazF4NGFzd1o5TVZsR0xWbWFuYnd3eU1fRzNBMWNUY1FzeFZLcWQzWFRPT0Y4SmRCUUVleTVIZzFkRmhCQ1pKMjNlSTVjMGI4aTZnd3k5d3lPUG1XTFpnSHlHN2Zoa3BKUk1hUFdKdUczX20xNFEwNDU1Yw?oc=5",
+        "date": "Mon, 16 Nov 2026 21:19:10 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOUWtEOGtHd0VyaHpJRnEzcDYtRklURlFfcFByaFNfQ2dhLVJTbkFoSklXeDd3X1dwdVRRR2JVYVRxazF4NGFzd1o5TVZsR0xWbWFuYnd3eU1fRzNBMWNUY1FzeFZLcWQzWFRPT0Y4Sm"
+      },
+      {
+        "title": "Stock Market Today: Dow Dives As Nvidia Makes Huang Decision; Warren Buffett Does This - Investor's Business Daily",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEJTV0JCb1hoUGFKNlZDeWh4aUhldVJqMUZVY2JJSGVLRUg3Q25iSmtqd1FVRk92RTNpRHRwdGlqM3hLamtjdEtJd3pzclRNNEFJXzVDU1B4b3BEczlYbjV1TGhaVTZQOU9iNTFpMHp3M29HYXlVLUFtTk5mRjdVbHpwV0hGT1R3YWRia0xvODkxSlhLS0xkLXhGaTdlQzJVNktoSVZUWkNqVGtUSDBmRF9n?oc=5",
+        "date": "Mon, 16 Nov 2026 21:37:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEJTV0JCb1hoUGFKNlZDeWh4aUhldVJqMUZVY2JJSGVLRUg3Q25iSmtqd1FVRk92RTNpRHRwdGlqM3hLamtjdEtJd3pzclRNNEFJXzVDU1B4b3BEczlYbjV1TGhaVTZQOU9iNTFpMH"
+      },
+      {
+        "title": "Should Nvidia bring Jensen Huang back, as Silicon Valley's elite are demanding? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNEx2YXZCZ2tkQTQ1b09lV0dXMWdFYjFuc2ktakVJUDJWVWh3LVZEdlgzLU16eWpVenJ1QUI5VFFIRjVOYnEwS2pxamowZUhYTmdBcUp2VklWNWdRZVJUQ0N0TnRSRFQ3cjFxOC1UeUsxdjVzRlYwWGpnOUZjSVQxRnQ5d0FPeWREWWhnSl9fM2JONDBQRnlpY3FaaWNTTjVRSTYyWGNOUmt3VUw0OXFqaGNISmp1a2c4aDQ5SFdYMlhRcXlfNkphQTZQOUQ4aDVickE?oc=5",
+        "date": "Mon, 16 Nov 2026 20:00:00 GMT",
+        "summary": "<ol><li><a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNEx2YXZCZ2tkQTQ1b09lV0dXMWdFYjFuc2ktakVJUDJWVWh3LVZEdlgzLU16eWpVenJ1QUI5VFFIRjVOYnEwS2pxamowZUhYTmdBcUp2VklWNWdRZVJUQ0N0TnRSRFQ3cj"
+      },
+      {
+        "title": "'No chance Jensen comes back': Nvidia's leadership crisis casts a long shadow over earnings - Business Insider",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2x3NElMaXZrYmxQRm5GQ2hmbnlSYjZIY1dOYXM2ZndWZDU2T3o1c01mWDU4bUUwVnRKdmQyWnBLVkRjMGw4SHVQQWdyTlRoUTFaVm50QjJxcUV0QlR3bFVCOW1MeXg1TVNiakFVTzhMZzh6VVBVRDhoUWNpOVBVSllsVldmbnJwSHJrN3JiNnRPVm1mWnJGVDdMR3ZwWkFMWC1V?oc=5",
+        "date": "Mon, 16 Nov 2026 17:53:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2x3NElMaXZrYmxQRm5GQ2hmbnlSYjZIY1dOYXM2ZndWZDU2T3o1c01mWDU4bUUwVnRKdmQyWnBLVkRjMGw4SHVQQWdyTlRoUTFaVm50QjJxcUV0QlR3bFVCOW1MeXg1TVNiakFVTz"
+      },
+      {
+        "title": "How Nvidia’s Board Made Billions While Overseeing the Company - WSJ",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaElGSXRGa2ZfTVl4cGtPY09zWHlKMWR4d2RidXpGQXBQRHlNYlRXYU5GaGp6NVFYcTdGb0dWbW9LaC1ua2ttckNKNHlRdlZ0SlNwbnFxMHJxYkQwbm1OR1ROVGtud2h1ZXpUYXhEODIzX0JmT2gyVzJZR01hZXFsa2VhVTExeG4xSjREdTV4dlZXZldsWGd1emlQZUZPa2M?oc=5",
+        "date": "Tue, 17 Nov 2026 03:14:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNaElGSXRGa2ZfTVl4cGtPY09zWHlKMWR4d2RidXpGQXBQRHlNYlRXYU5GaGp6NVFYcTdGb0dWbW9LaC1ua2ttckNKNHlRdlZ0SlNwbnFxMHJxYkQwbm1OR1ROVGtud2h1ZXpUYXhEOD"
+      },
+      {
+        "title": "Nvidia Stock Has a 20% Rebound in Sight—If Bulls Can Clear a Hurdle - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVHlZMXdwbHJLTmdVa0lYcE8xRG5pOXlNckticy1NeWhxZWJZZFVaeERFT2wzdzMzS3dZMjVTMUhpZzNEOXgtSkwzdElrd3lCdDctemVDeEJfX2tWVF9wMVNIMHNXZVo1d3l0OFFWazhCQ0xCMFlMd1ZrRkY5RENONFYtYTVoclFHMWxfQTNpVENrbzY5dnpzMThB?oc=5",
+        "date": "Mon, 16 Nov 2026 18:06:03 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPVHlZMXdwbHJLTmdVa0lYcE8xRG5pOXlNckticy1NeWhxZWJZZFVaeERFT2wzdzMzS3dZMjVTMUhpZzNEOXgtSkwzdElrd3lCdDctemVDeEJfX2tWVF9wMVNIMHNXZVo1d3l0OFFWaz"
+      },
+      {
+        "title": "Nvidia stock falls as Jensen Huang reportedly weighs CEO comeback, Musk backs return - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVzVrZl9udUdNTVdUdnNoUG1meHJncG1HUVN6WXlXQ3JkTGNSOE9HQU1pcHJ5RFhEZ01STzQ0ZHFlNUh4YVV6eVNpN3NHNXR0eUpoT2l6bTY2QW5hT05yaXMzaGtZcVBrUWdOa25YeWNkckJ6SW80U3Q1VFhsUUJjUjV1dzNyM0EtUlR5OWh6T1paRnVjeUIzSjVqS0hIaDA1REVkMGMxM3lzMDhYdG1wOFZCLVdxRjRleXNDNTdYc2pQSDVmZVhzZ1ZTUThfWUgwdkRnUzhQOGc?oc=5",
+        "date": "Mon, 16 Nov 2026 12:10:18 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVzVrZl9udUdNTVdUdnNoUG1meHJncG1HUVN6WXlXQ3JkTGNSOE9HQU1pcHJ5RFhEZ01STzQ0ZHFlNUh4YVV6eVNpN3NHNXR0eUpoT2l6bTY2QW5hT05yaXMzaGtZcVBrUWdOa25YeW"
+      },
+      {
+        "title": "Prediction: Nov. 18 Will Be a Huge Day for AI Power Stocks. Here’s Why. - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOc3JhM0o3LUJUVnpLWFJBaE5qdk5zNExKMWxRYVA0OHlEVHhGU1Y4TjYySWF2Q0tEUk85RzFIeHF2cUF1QUc1Ul9vb3V5UWFzVjU0dXNHandkVTZOUk9QTmtIYXJ0NU5IZFMzcS1NeEtYbmxiRV9Fa3NDcVhmV0xKbHBNeUQ1amN1R0RqYnkzUVV5Nmpp?oc=5",
+        "date": "Tue, 17 Nov 2026 01:25:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOc3JhM0o3LUJUVnpLWFJBaE5qdk5zNExKMWxRYVA0OHlEVHhGU1Y4TjYySWF2Q0tEUk85RzFIeHF2cUF1QUc1Ul9vb3V5UWFzVjU0dXNHandkVTZOUk9QTmtIYXJ0NU5IZFMzcS1NeE"
+      },
+      {
+        "title": "Nvidia stock valuation looks 'draconian,' even without Jensen Huang: Analyst - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMDl4WHFaaUdid1hZWl9vazlpQTJwbmxuR2xyT3RUblBjemlFOHRnR3BGemhCUmI3ZWktSHlib1NqUDl5SnFPVWlFenh6NUFUMUk1YWdyWmxfTmRKbzJDSDFZdUJCU3FTb3UzbVF0NXBJS25QMWxIOHFiSmhLXzR5clZqYmZYZkRHYi1WVXdnYkdwOUNVX2JrS1ZxUWhkaXZJdnJTcTBWMzRPbm42dm1zVEE2NmNhOEcyRUtjTkFFZU1KWWJUZk5WTVhxd1dmYXpSQlE?oc=5",
+        "date": "Mon, 16 Nov 2026 22:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMDl4WHFaaUdid1hZWl9vazlpQTJwbmxuR2xyT3RUblBjemlFOHRnR3BGemhCUmI3ZWktSHlib1NqUDl5SnFPVWlFenh6NUFUMUk1YWdyWmxfTmRKbzJDSDFZdUJCU3FTb3UzbVF0NX"
+      }
+    ]
+  },
+  "QQQ": {
+    "code": "QQQ",
+    "name": "QQQ",
+    "sector": "ETF_나스닥100",
+    "market": "해외",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": [
+      {
+        "title": "QQQ Is in a Correction (Down 10%). Should You Buy More of This Popular Tech ETF? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNT3d6Nks1ZlhnZXJ6Q1pMUDB4ZTA5UXUyRzJ5U3dnWmRhSnUyS2c2YXFMNnJFWngzMjJqRE4xUWN5bEgyX1dRajZkYUF2cDdMdGIzNi1QY1ZhQ0U2SHpqQXFJTVRMZk5SbE9zWU1yX1VBRzlLMWJhWHBCTS14Uk9pNV9ra2ZCVlFhTXl0Nm9fOWFWTTRTZlE?oc=5",
+        "date": "Fri, 13 Nov 2026 14:01:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxNT3d6Nks1ZlhnZXJ6Q1pMUDB4ZTA5UXUyRzJ5U3dnWmRhSnUyS2c2YXFMNnJFWngzMjJqRE4xUWN5bEgyX1dRajZkYUF2cDdMdGIzNi1QY1ZhQ0U2SHpqQXFJTVRMZk5SbE9zWU1yX1"
+      },
+      {
+        "title": "Stock Market Today: Nasdaq-100 Sinks 1% as Nvidia Faces Its First Earnings Without Jensen Huang - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbDVpN2RLWTVRb25zM19CZURtUUlIT056MDhZWVJ4NFlwN0pyeWhIb2FsQmJnOGVDQ1d3UWowSjJZdzg5dVJpa1d2cS1wLVBhOFktaGtXN3JkeDVvemUtZ1RPMHY1OFY2Yjc0QTdmVDQyVVROeDhvem9rZmpjOUNCYXFGcFZ3MXZKclUwR01FTXA4MUFQc1RBdG5R?oc=5",
+        "date": "Mon, 16 Nov 2026 14:58:10 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPbDVpN2RLWTVRb25zM19CZURtUUlIT056MDhZWVJ4NFlwN0pyeWhIb2FsQmJnOGVDQ1d3UWowSjJZdzg5dVJpa1d2cS1wLVBhOFktaGtXN3JkeDVvemUtZ1RPMHY1OFY2Yjc0QTdmVD"
+      },
+      {
+        "title": "History Shows the QQQ ETF Could Plunge 50%-70%, But Modern Investors Have New Tools to Protect Themselves and Still Profit - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBXeHBwOHg2aXp5Z05rZHlUc0p0RzZtYnBMYWplc3NESlRpbEY2S0tOQWNWeWxQNXQ4RkQwbEFlT0x3V0tobE5WR3YzZktfZ0hqWldTdVEtTVJoeVJhMjU0X0h6clFmTzk0RlZlV2g4eXpsWGRxNUNjb2NiZjUyQQ?oc=5",
+        "date": "Thu, 12 Nov 2026 15:43:37 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTFBXeHBwOHg2aXp5Z05rZHlUc0p0RzZtYnBMYWplc3NESlRpbEY2S0tOQWNWeWxQNXQ4RkQwbEFlT0x3V0tobE5WR3YzZktfZ0hqWldTdVEtTVJoeVJhMjU0X0h6clFmTzk0RlZlV2g4eX"
+      },
+      {
+        "title": "QQQ Nov 2026 683.000 call (QQQ261117C00683000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpbUZCcmRhTl9Fa0tjMGVlbXlJRUZmeXZYd3JFZGZ0akxMMTk3Vl9PbHY4X0N3Y3pXelBoY3IzTDVobHMzY1kyU2NNVDQ0ZFlSZDFyaFRKdzhpRmxsaXpxTmRyclY?oc=5",
+        "date": "Tue, 17 Nov 2026 01:01:46 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpbUZCcmRhTl9Fa0tjMGVlbXlJRUZmeXZYd3JFZGZ0akxMMTk3Vl9PbHY4X0N3Y3pXelBoY3IzTDVobHMzY1kyU2NNVDQ0ZFlSZDFyaFRKdzhpRmxsaXpxTmRyclY?oc=5\" target=\""
+      },
+      {
+        "title": "Consumer Defensive Stocks Extend Winning Streak To 6 Weeks As SPY, QQQ Rebound: TTD, CHTR, TSLA Lead Gains - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQclc5ZnhaMXdOV3VWbUVJQkpXTmNUVHhGSVBLWE5RSFpJYUhSNXppb0o4SmsyZ0U3azJDOWdNN3lzMWNYTC1CUnBqeVFLbjQ3dnVyamJGX2wzRFBhenU2X2hXdEFzRDFlTzFieTRObmU4Zzh6ZWpyZktpamQza1JsX3c0Qi1vTGhIamcwa0FiRnhjM0hFVWNtTUVTWjFXZWN4dWZJMUhjT00?oc=5",
+        "date": "Mon, 16 Nov 2026 01:13:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQclc5ZnhaMXdOV3VWbUVJQkpXTmNUVHhGSVBLWE5RSFpJYUhSNXppb0o4SmsyZ0U3azJDOWdNN3lzMWNYTC1CUnBqeVFLbjQ3dnVyamJGX2wzRFBhenU2X2hXdEFzRDFlTzFieTRObm"
+      },
+      {
+        "title": "QQQ Nov 2026 676.000 call (QQQ261116C00676000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9TbUdSbHR5OFpXc3ByZkdZd24tbTlSSTh5bnM2a3ZmWlcxbUt4bDMxOFNUY1piNUtha0hFdXVwZG1GaVJLUTdVb25XV01Xb1BqOEd2TEFPMU1DU0ROTmNXb0FKVTc?oc=5",
+        "date": "Mon, 16 Nov 2026 19:37:08 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9TbUdSbHR5OFpXc3ByZkdZd24tbTlSSTh5bnM2a3ZmWlcxbUt4bDMxOFNUY1piNUtha0hFdXVwZG1GaVJLUTdVb25XV01Xb1BqOEd2TEFPMU1DU0ROTmNXb0FKVTc?oc=5\" target=\""
+      },
+      {
+        "title": "QQQ Nov 2026 681.000 call (QQQ261116C00681000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZSFRHVF9uNW9DS19PV1RWV1pUdzRhSnJCZEhMWm5Lc2hGcWJJY3pYbzVTM1JzWmZFa3c3VWNJVnlhRmFDSFRnZlhOVlVRX1dpYzFDSWVXT3hBZWllVUZVcWlTVWM?oc=5",
+        "date": "Mon, 16 Nov 2026 18:51:19 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZSFRHVF9uNW9DS19PV1RWV1pUdzRhSnJCZEhMWm5Lc2hGcWJJY3pYbzVTM1JzWmZFa3c3VWNJVnlhRmFDSFRnZlhOVlVRX1dpYzFDSWVXT3hBZWllVUZVcWlTVWM?oc=5\" target=\""
+      },
+      {
+        "title": "QQQ Nov 2026 677.000 call (QQQ261116C00677000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9JOUE0V2gzSUFFMUtwZlBTZF9kMFlvS2NwemdDamhFMUhieXBiaDRLZ2ZLRnpDdDZMb3V6ZV9abUlCcjZObVVKZF9CYmV3LWVWY1l1bldxOS1yaDNpb1RQRXdKTXc?oc=5",
+        "date": "Mon, 16 Nov 2026 18:35:44 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9JOUE0V2gzSUFFMUtwZlBTZF9kMFlvS2NwemdDamhFMUhieXBiaDRLZ2ZLRnpDdDZMb3V6ZV9abUlCcjZObVVKZF9CYmV3LWVWY1l1bldxOS1yaDNpb1RQRXdKTXc?oc=5\" target=\""
+      },
+      {
+        "title": "QQQ Nov 2026 687.000 call (QQQ261116C00687000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LLTZkVjN0YjFWSnYwWWlIVy1uVVlrQWpMUkRheVpzSnJaN2I4TGx3a25xWnZEZW9ieEpZaGcyejI3eWlDSDZwUl9RSzZlZHN4SXRVWlhsSWpyckttQXUzYXBPQnk?oc=5",
+        "date": "Mon, 16 Nov 2026 17:24:12 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LLTZkVjN0YjFWSnYwWWlIVy1uVVlrQWpMUkRheVpzSnJaN2I4TGx3a25xWnZEZW9ieEpZaGcyejI3eWlDSDZwUl9RSzZlZHN4SXRVWlhsSWpyckttQXUzYXBPQnk?oc=5\" target=\""
+      },
+      {
+        "title": "QQQ Nov 2026 692.000 call (QQQ261116C00692000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13N1VmUmdyZ1BtbmgtZUE3d2tIbEhDUE9HY2R5RHlMczBicGtCNHg2UDVVUU9mLXloaXFhTFlKa1hTdTkzS1M1YXZ3NHFvVHNQVDlIeFVkZXhWSU1NQk9vc2FFQ1g?oc=5",
+        "date": "Mon, 16 Nov 2026 15:13:30 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE13N1VmUmdyZ1BtbmgtZUE3d2tIbEhDUE9HY2R5RHlMczBicGtCNHg2UDVVUU9mLXloaXFhTFlKa1hTdTkzS1M1YXZ3NHFvVHNQVDlIeFVkZXhWSU1NQk9vc2FFQ1g?oc=5\" target=\""
+      },
+      {
+        "title": "QQQ Nov 2026 691.000 call (QQQ261116C00691000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PWGpZVklQWlp3X3JvQlRtUWRSWFZLWHFDVjBsbjEyQ3U5QTJyRURmZGZFT0ZacExYQjYyN3VZc2Vuc3JQU0JjeWtRUjB5NjVaNEFveHdpbFNZRHZOdHdpQlN6VzE?oc=5",
+        "date": "Mon, 16 Nov 2026 15:09:47 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9PWGpZVklQWlp3X3JvQlRtUWRSWFZLWHFDVjBsbjEyQ3U5QTJyRURmZGZFT0ZacExYQjYyN3VZc2Vuc3JQU0JjeWtRUjB5NjVaNEFveHdpbFNZRHZOdHdpQlN6VzE?oc=5\" target=\""
+      },
+      {
+        "title": "Jensen Huang Is Out. Here’s How Much Nvidia’s Selloff Cost a $10,000 QQQ Position - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3FleWR1cWJ2ZjRITlFvWE5STVo4SDRMUGoyMngxWWpGNzlOSnRUQXVzT0lKcVpvaWo0eG8xV252M01rOGIxdzlBSXIwU3BJXzJKMkxkbEZaNUxLc0Z0NzlyZElCckJPejFKSW9TMjVVYzhRc2NUWElOZWNXTS10S0tRZ1drR1NTS0tieldaN3hjWlhxR291VVZKTl9IUQ?oc=5",
+        "date": "Thu, 12 Nov 2026 16:29:07 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQa3FleWR1cWJ2ZjRITlFvWE5STVo4SDRMUGoyMngxWWpGNzlOSnRUQXVzT0lKcVpvaWo0eG8xV252M01rOGIxdzlBSXIwU3BJXzJKMkxkbEZaNUxLc0Z0NzlyZElCckJPejFKSW9TMj"
+      },
+      {
+        "title": "QQQ quarterly outlook report - Invesco",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5EcUVSNEpyMlNMNlZUWVVuOGRQa0l2Z0dTSGVpWE1uXy1PS051T1E2VGZBbXVGVDRIU19OM3haZUZUMWxpV01GOWdyMlRsckk0QXFydTBkZWxkdEtZaDRjMmxybVY4QTdOR2NVS0U0UXRrTk0?oc=5",
+        "date": "Wed, 28 Oct 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE5EcUVSNEpyMlNMNlZUWVVuOGRQa0l2Z0dTSGVpWE1uXy1PS051T1E2VGZBbXVGVDRIU19OM3haZUZUMWxpV01GOWdyMlRsckk0QXFydTBkZWxkdEtZaDRjMmxybVY4QTdOR2NVS0U0UX"
+      },
+      {
+        "title": "VOO vs. QQQ: Here's the ETF I'd Personally Buy and Hold for Decades - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNX0tGb19tMWt0TjF2WVUxZWR6TFI4ZmdESzN0QmVxSjNDOGktdWJ2cWtqS0Z2LUVyUmpXSjQwWk9Rb2JtWlBhRldiMFh6clozRkgxQ3hLTFlSbGhUOU0wdFpqYXJycTBnaVdueXFLS2RObUI2ck82ZGo3X2xJZlZHTjU4YnR5N2VxTEh6Zkt3?oc=5",
+        "date": "Mon, 26 Oct 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNX0tGb19tMWt0TjF2WVUxZWR6TFI4ZmdESzN0QmVxSjNDOGktdWJ2cWtqS0Z2LUVyUmpXSjQwWk9Rb2JtWlBhRldiMFh6clozRkgxQ3hLTFlSbGhUOU0wdFpqYXJycTBnaVdueXFLS2"
+      },
+      {
+        "title": "This Little-Known ETF Owns QQQ’s Stocks Without the Big Bet on Nvidia - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWU16bXJETURsV0ZwN1NKYUJ0RG1rbGsxLUt6V1gtczZsRm13M3hIaHVmeG9ndDRMTmlqQ2Y2d0RmWEJ3TXM5UVZUWm1VZTRrV2F0RGNXYjFNdkFnd0xPOU9palBPdzJrY01JQ0k0eGRVMVR0RGQ3R3MwaWxpWjQxYWg4RUg5X0VBem42NlVVQzRVRHdL?oc=5",
+        "date": "Fri, 30 Oct 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNWU16bXJETURsV0ZwN1NKYUJ0RG1rbGsxLUt6V1gtczZsRm13M3hIaHVmeG9ndDRMTmlqQ2Y2d0RmWEJ3TXM5UVZUWm1VZTRrV2F0RGNXYjFNdkFnd0xPOU9palBPdzJrY01JQ0k0eG"
+      }
+    ]
+  },
+  "TQQQ": {
+    "code": "TQQQ",
+    "name": "TQQQ",
+    "sector": "ETF_레버리지",
+    "market": "해외",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": [
+      {
+        "title": "TQQQ Nov 2026 56.000 call (TQQQ261116C00056000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yaElYVjJyWTl2cjJpSm1fN1otY0hBSklMYnlCNTY4UFQ3NXdsd19hQ1VfaUJZbm9WUUZHTGFETkczYV9OMndHYkxFR1VDQXN5NmtlXzVEemx1RFdSejRRajQ0LTBZQQ?oc=5",
+        "date": "Mon, 16 Nov 2026 18:35:43 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yaElYVjJyWTl2cjJpSm1fN1otY0hBSklMYnlCNTY4UFQ3NXdsd19hQ1VfaUJZbm9WUUZHTGFETkczYV9OMndHYkxFR1VDQXN5NmtlXzVEemx1RFdSejRRajQ0LTBZQQ?oc=5\" targe"
+      },
+      {
+        "title": "ProShares UltraPro QQQ (TQQQ) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VNmt2SkxYc2hucXN6Rm04QWdjT29NVGc0Si1KQU82UVNqUGdfVV9NalRraEZLNzRXWWJHS0ZVempONm8tbEpBYzhUZDFVTzBWY0ZkSTQtTW9FSkpkZWVvYWZR?oc=5",
+        "date": "Wed, 11 Nov 2026 16:05:39 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VNmt2SkxYc2hucXN6Rm04QWdjT29NVGc0Si1KQU82UVNqUGdfVV9NalRraEZLNzRXWWJHS0ZVempONm8tbEpBYzhUZDFVTzBWY0ZkSTQtTW9FSkpkZWVvYWZR?oc=5\" target=\"_bl"
+      },
+      {
+        "title": "TQQQ: What a $10,000 Bet on This 3X Nasdaq ETF Would Actually Be Worth Today - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOVBUcUpjX1FyZm9uNHVpUmNvVHR3cV9PWHA1RXRqaGVxUks5OEtBRkI1dWlhR3d2bGwzdmVKZ3dTVENYb0N0RkJPTko5a1V4NmJHNUdyUEtreXlycW9BUUxlMDJSU3lDS0libnpreVd1UTN1M1ZzM1hTTm1LNDFzSm13aW1KaFVqNDA0?oc=5",
+        "date": "Thu, 30 Jul 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOVBUcUpjX1FyZm9uNHVpUmNvVHR3cV9PWHA1RXRqaGVxUks5OEtBRkI1dWlhR3d2bGwzdmVKZ3dTVENYb0N0RkJPTko5a1V4NmJHNUdyUEtreXlycW9BUUxlMDJSU3lDS0libnpreV"
+      },
+      {
+        "title": "Don't Buy TQQQ Unless You Are Confident About These 3 Things - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdEd0Ni1VUmF6d2kxaFUzaUk4c19ZaG5TSEh0NllMN2c0UGlQcGNOZlVaUkU0UEE3UVVsTEhOcF9xUkNmNE8xcmFCSHZabmpabFJYX1UwcnlTdHBqdlRCdFZXUzh5dkllMDlNRXZ2VjZ5TmFxNmpTRGRXQ1FQX2ZkWUhjdEwxaWp0LXd3OGVtSHJGeUFMb2p2RXJ6dw?oc=5",
+        "date": "Thu, 30 Apr 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOdEd0Ni1VUmF6d2kxaFUzaUk4c19ZaG5TSEh0NllMN2c0UGlQcGNOZlVaUkU0UEE3UVVsTEhOcF9xUkNmNE8xcmFCSHZabmpabFJYX1UwcnlTdHBqdlRCdFZXUzh5dkllMDlNRXZ2Vj"
+      },
+      {
+        "title": "Could Investing $10,000 in TQQQ Make You a Millionaire? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNE5ZV3ZZalpaemVCU2hSYUlvX09jbWUtb2ZPOWVYbUgzRkVndUQzRVhHWVo0RTVrckVKbVgwd2tjUDBxeDRock9WaGh6RFBuQlFvSDlJR2o2OWNxSVplV1g0RWMzRktjMlEwdFhCN0ZNTDFKNE5QRDhqX1o2cC0xY281eGtUYUJMdTBaRm5UWmpwVi1vVmtv?oc=5",
+        "date": "Fri, 03 Apr 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxPNE5ZV3ZZalpaemVCU2hSYUlvX09jbWUtb2ZPOWVYbUgzRkVndUQzRVhHWVo0RTVrckVKbVgwd2tjUDBxeDRock9WaGh6RFBuQlFvSDlJR2o2OWNxSVplV1g0RWMzRktjMlEwdFhCN0"
+      },
+      {
+        "title": "BETAPRO 3X NASDAQ-100 DAILY LEV (TQQQ.NE) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kNHZiMTItd3h6dGplbmU0dzJwWm5zUlE0T3ozcHZIMnNldjRma01QanF1aUdxTkxtYUUyeFl4aUVpXzUyRmZnLVZXUmJNWklKTTgzNm53?oc=5",
+        "date": "Tue, 05 May 2026 16:02:22 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE9kNHZiMTItd3h6dGplbmU0dzJwWm5zUlE0T3ozcHZIMnNldjRma01QanF1aUdxTkxtYUUyeFl4aUVpXzUyRmZnLVZXUmJNWklKTTgzNm53?oc=5\" target=\"_blank\">BETAPRO 3X "
+      },
+      {
+        "title": "Don't Buy TQQQ Unless You Are Confident About These 3 Things - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYVFRZlFSZFVqS2h2OGQzMWtJZnltUEdkOENzWkFHMjM1X3hybzlaNGVsZVNWak9nTTJJUHllV0J3b0tXM0Q4MzdVb1dEMXFEN2pzRV9jdkxRb2tuZk9IM2ZKMHBFZ2lRUEFYSnVJUWQtSFdCMnFveVc4RFlHdTZzeWhxT0NiSm1Xdmo3LXJxVQ?oc=5",
+        "date": "Thu, 30 Apr 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxQYVFRZlFSZFVqS2h2OGQzMWtJZnltUEdkOENzWkFHMjM1X3hybzlaNGVsZVNWak9nTTJJUHllV0J3b0tXM0Q4MzdVb1dEMXFEN2pzRV9jdkxRb2tuZk9IM2ZKMHBFZ2lRUEFYSnVJUW"
+      },
+      {
+        "title": "TQQQ: Only One Special Type of Investor Should Buy This ETF - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYVRLWUpWTTM3WndiSWhfcUZuUGlYU1hKVFhUM0hkMC1NTXczUnp6eXhwVlp1emhjc1BUOHlJUzFLZ0ZQcF9xWXNDRGRtNnFHU0RHSkZ4cHNzNENMaTRKSTF4cGl2SktBVktXLWstdEV0ZGx4a1djODFpY20tdnhtQ2MyZzFyVXBXOUFVc1pLc1RFSmpoQ2Vn?oc=5",
+        "date": "Sat, 18 Apr 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNYVRLWUpWTTM3WndiSWhfcUZuUGlYU1hKVFhUM0hkMC1NTXczUnp6eXhwVlp1emhjc1BUOHlJUzFLZ0ZQcF9xWXNDRGRtNnFHU0RHSkZ4cHNzNENMaTRKSTF4cGl2SktBVktXLWstdE"
+      },
+      {
+        "title": "TQQQ - ProShares UltraPro QQQ 3x Shares Stock Price and Quote - Finviz",
+        "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1PMTN2c25oLTctQVpLR1FjUkNRTHZFalp2QnluWWo5N0J4T2xlVXN2aFpldXE1UlVYRHpSOTVVWGRBckxreVE?oc=5",
+        "date": "Tue, 26 May 2026 10:08:59 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE1PMTN2c25oLTctQVpLR1FjUkNRTHZFalp2QnluWWo5N0J4T2xlVXN2aFpldXE1UlVYRHpSOTVVWGRBckxreVE?oc=5\" target=\"_blank\">TQQQ - ProShares UltraPro QQQ 3x"
+      },
+      {
+        "title": "How to Buy ProShares UltraPro QQQ (TQQQ) - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd3AwVnJESHBlQkRpbW43YkhoQTBMclhfbjVSWktDZU1UeVNHRGlkMm1EODlyZ191RHpabHRXNVJUZXFYblVSTExWYWlqa2lDSUVZaXJSU3I1VXEyVWw1TjA5eU9pY3NxanExSWM2ZUp6a0R3R2RFbGUwTlJ2N0lGZ0Vn?oc=5",
+        "date": "Tue, 24 Feb 2026 08:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPd3AwVnJESHBlQkRpbW43YkhoQTBMclhfbjVSWktDZU1UeVNHRGlkMm1EODlyZ191RHpabHRXNVJUZXFYblVSTExWYWlqa2lDSUVZaXJSU3I1VXEyVWw1TjA5eU9pY3NxanExSWM2ZU"
+      },
+      {
+        "title": "Could Investing $10,000 in TQQQ Make You a Millionaire? - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMUxqMXZBM3JPQlhBUFFEYy1aVjlrbHpPZnVQVGZqXzA0LVZxVVFJTy1KOG1uQkNBQUttNEpLcjhVc3M2UnFEbkZNc2t1NXRqaWVRRWs3TnN6TnRQS2NldmhockF5UllBcWhnN2ZtSVkxclNCb1V2TVJkWTNaYWx5WTUwZlROZjJ5SmFiNE1VME5EZ21LUkwxTQ?oc=5",
+        "date": "Fri, 03 Apr 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNMUxqMXZBM3JPQlhBUFFEYy1aVjlrbHpPZnVQVGZqXzA0LVZxVVFJTy1KOG1uQkNBQUttNEpLcjhVc3M2UnFEbkZNc2t1NXRqaWVRRWs3TnN6TnRQS2NldmhockF5UllBcWhnN2ZtSV"
+      },
+      {
+        "title": "ProShares UltraPro QQQ (TQQQ) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GcUxBSFRNMHdxX29reFVOY3V5OFZ1dFBqa0NpbDhEV3c0SXNqOThQZFdyZGxkcDVkZGVUazNFM3ItQVdaZGo4WVdVV2NUMWlxNlE?oc=5",
+        "date": "Tue, 16 May 2017 07:51:55 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1GcUxBSFRNMHdxX29reFVOY3V5OFZ1dFBqa0NpbDhEV3c0SXNqOThQZFdyZGxkcDVkZGVUazNFM3ItQVdaZGo4WVdVV2NUMWlxNlE?oc=5\" target=\"_blank\">ProShares UltraP"
+      },
+      {
+        "title": "Huobi HTX to launch spot and grid trading for Q... - Pluang",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZXp3TlozWnJuVG9JTVRhSXpULUhRQS11LVVWSGI1TTJCamZwWkxWWldWQ0tHXy11cDBYSGhSZ2s0RWlCMmpjdkdMNEJqM2Fpck1JZFZRZXlxaEZGcUc4VXNCNzgzMmFuUkgwZXNQMS1jVWJMNE5FYWk5WXBhUkRza0QyR014N1huUVA3SElmbVBOQVdfNjNTb1NR?oc=5",
+        "date": "Mon, 16 Nov 2026 04:04:29 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxOZXp3TlozWnJuVG9JTVRhSXpULUhRQS11LVVWSGI1TTJCamZwWkxWWldWQ0tHXy11cDBYSGhSZ2s0RWlCMmpjdkdMNEJqM2Fpck1JZFZRZXlxaEZGcUc4VXNCNzgzMmFuUkgwZXNQMS"
+      },
+      {
+        "title": "TQQQ Interactive Stock Chart | ProShares UltraPro QQQ Stock - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBDNExjbXJKNXdDZkIwczRxOUFQUVhUdWVWY1g4RnpOYTNZRXpadmhmcGVTQ0tydVZzMlRxc2JhbkJvZGZRcHg2bDdPb0NuZw?oc=5",
+        "date": "Sun, 30 Apr 2017 14:45:47 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTFBDNExjbXJKNXdDZkIwczRxOUFQUVhUdWVWY1g4RnpOYTNZRXpadmhmcGVTQ0tydVZzMlRxc2JhbkJvZGZRcHg2bDdPb0NuZw?oc=5\" target=\"_blank\">TQQQ Interactive Stoc"
+      },
+      {
+        "title": "BetaPro 3x Nasdaq-100 Daily Leveraged Bull Alternative ETF (TQQQ.TO) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wTnN2UkRtMWpWRUJDUDlGUmtEYjd2S3BLdnAxbmRSRXZMT0RZdkFFRzN0a2JkQVB0ZmNMZzZRNXU4NFE2RWVjb0tCbHFLajl1Qkt0VXFB?oc=5",
+        "date": "Sat, 12 Jul 2025 22:44:39 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wTnN2UkRtMWpWRUJDUDlGUmtEYjd2S3BLdnAxbmRSRXZMT0RZdkFFRzN0a2JkQVB0ZmNMZzZRNXU4NFE2RWVjb0tCbHFLajl1Qkt0VXFB?oc=5\" target=\"_blank\">BetaPro 3x "
+      }
+    ]
+  },
+  "AAPL": {
+    "code": "AAPL",
+    "name": "애플",
+    "sector": "IT_기술",
+    "market": "해외",
+    "basic": {},
+    "company": {},
+    "valuation": {},
+    "financial": {},
+    "news": [
+      {
+        "title": "Is Apple Stock a Buy Right Now? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNzVxdVpEWlYtU092N3BWN0hXNXFLRlpHYmY0QmJRcTdOcXFsdUdZMWtSeHd5cWI1YW5LRU0xcHlkaDlmRDVQZzdaUld4SVBWLVBtZTZvTUVXVjRwaHpKZkhHenZvX2ZNc05qclU5bllkMlljWS15Q3FobDhjYWxvT1psdnctT3JWXy01Sg?oc=5",
+        "date": "Sat, 14 Nov 2026 00:40:44 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxQNzVxdVpEWlYtU092N3BWN0hXNXFLRlpHYmY0QmJRcTdOcXFsdUdZMWtSeHd5cWI1YW5LRU0xcHlkaDlmRDVQZzdaUld4SVBWLVBtZTZvTUVXVjRwaHpKZkhHenZvX2ZNc05qclU5bl"
+      },
+      {
+        "title": "AAPL Stock Quote Price and Forecast - CNN",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE00U3JoRzhkckt5aVFxb1NVNnBndWhrcDM5N0NqUzZGUk8xQk04OF9jVWRULXh2RmlJaGpTS1FJWEREaUlNUnhfSHk2cm53NllX?oc=5",
+        "date": "Mon, 16 Nov 2026 00:06:35 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE00U3JoRzhkckt5aVFxb1NVNnBndWhrcDM5N0NqUzZGUk8xQk04OF9jVWRULXh2RmlJaGpTS1FJWEREaUlNUnhfSHk2cm53NllX?oc=5\" target=\"_blank\">AAPL Stock Quote Pr"
+      },
+      {
+        "title": "Apple Inc. (AAPL) stock price, news, quote and history - Yahoo Finance Australia",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9nVjlTU0FMNHZwQXdObEg0Vm0wWjhId1pKS2YtREJGN0MwWWtkdUhjYlBOd24wYWtrNE5pOVhodFdMT01ERi15amxYMDE1MUd6UUE?oc=5",
+        "date": "Sun, 15 Nov 2026 03:02:30 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE9nVjlTU0FMNHZwQXdObEg0Vm0wWjhId1pKS2YtREJGN0MwWWtkdUhjYlBOd24wYWtrNE5pOVhodFdMT01ERi15amxYMDE1MUd6UUE?oc=5\" target=\"_blank\">Apple Inc. (AAPL"
+      },
+      {
+        "title": "Former Apple chairman Arthur Levinson files to sell $31.8 million in company stock - 9to5Mac",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPREhaQVNhZS1VX1NLSFZHejdsaEp4b2NSRncybk5TbDJ2RU5qNlA2a1ZiMXZFTXI2dDNITFBHQTdHZjNvcnAyd0lpM09LZVZqYVBPZmkxM2NZSU8zUkpQdVRVV3NvWjRIdUpaNXg2YlBaTEpTN2pNYnprSnpRZnVIZUV6YXVlNUhuTG5iMG5FQUJteVB2eV8waXJnT184NUpWNGdscHJOeHNXOURtOTYyazRCVQ?oc=5",
+        "date": "Tue, 17 Nov 2026 00:32:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPREhaQVNhZS1VX1NLSFZHejdsaEp4b2NSRncybk5TbDJ2RU5qNlA2a1ZiMXZFTXI2dDNITFBHQTdHZjNvcnAyd0lpM09LZVZqYVBPZmkxM2NZSU8zUkpQdVRVV3NvWjRIdUpaNXg2Yl"
+      },
+      {
+        "title": "What's Going On With Apple Stock Wednesday? - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdW5ZN2QxY2xIN3lFT1dqRWx3dUxLYVlieklHV2IyVVVnVEJFZkNnWE83Q1JtV1Y3ZUcwWE0tcy13YmRMNmxDa0NmNlNWaDJYSFBJT3Uyd1RhblBSc1Jjenp1UFFZdWNCVTV4TlBBMHFYa2h6N2xGNG9PMm9lU2tpbnA3dk11MVB1MGFXTTZJTUhZMXVQU0RaLV90MEg?oc=5",
+        "date": "Wed, 11 Nov 2026 17:55:02 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOdW5ZN2QxY2xIN3lFT1dqRWx3dUxLYVlieklHV2IyVVVnVEJFZkNnWE83Q1JtV1Y3ZUcwWE0tcy13YmRMNmxDa0NmNlNWaDJYSFBJT3Uyd1RhblBSc1Jjenp1UFFZdWNCVTV4TlBBMH"
+      },
+      {
+        "title": "Apple Is the World’s Largest Company, and Nvidia Is Second. Here’s What $10,000 Invested in Each Today Could Be Worth by the End of Next Year. - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWVJhZDJfcFlqSnN2N25TRHpLazhkbE9GRFBWODJkaGVYd3FNZzRjR0prczZNcGdVV2djMVo5bHM0ZFd2djIzYlFkVFBQUk9KYjBuSFpVTExPQjRPT2pSd2Y4TFJlaE5wUHhBdDZUbnZUQXpGNG9lY2hkdWxDVnZ4aDl2bmxtVnI0WWZDaHUybEV3RU9GaGdhSWhGMG9JWnk5NkZCazk4d01uTlRBLVNnRGptVEotdXRFS05oY0tuV3U0d2gtaHFLaVJ0cU5mdWdvVFlBaE05Mng3WXZJdDJTTDZfRng2a3lNTTczbGtYY18wSzJwbGtTelpocm1JZw?oc=5",
+        "date": "Fri, 13 Nov 2026 15:22:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_gFBVV95cUxNWVJhZDJfcFlqSnN2N25TRHpLazhkbE9GRFBWODJkaGVYd3FNZzRjR0prczZNcGdVV2djMVo5bHM0ZFd2djIzYlFkVFBQUk9KYjBuSFpVTExPQjRPT2pSd2Y4TFJlaE5wUHhBdDZUbn"
+      },
+      {
+        "title": "I Will Keep Holding Apple Stock at New All-Time Highs as Long as It Stays Above This Key Level - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlFLLWdZMk1CYmc0WFZWWTZpaTE2NXY3Vi1xNENwNnhRLTZmamJrN1ZMR1BUSVZSZVVOWXNPLXAwSzJONU85cHdGV29XanE1Zk1PbHlMNWhxYnJfbUNEcERYOGxUR0JvS2ZqVWJmcnh2NDZSX09uV1pJVVZPRUNqQzgwMkQzWXZWX0lNNDhoQUZkc185Mnd2RnBB?oc=5",
+        "date": "Mon, 16 Nov 2026 16:40:03 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlFLLWdZMk1CYmc0WFZWWTZpaTE2NXY3Vi1xNENwNnhRLTZmamJrN1ZMR1BUSVZSZVVOWXNPLXAwSzJONU85cHdGV29XanE1Zk1PbHlMNWhxYnJfbUNEcERYOGxUR0JvS2ZqVWJmcn"
+      },
+      {
+        "title": "Is Apple Stock a Buy Right Now? - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZZzd4WHdhQ2gyRU5BckJfY21JTWhSdXYyZC1sZGlmb0FyZEZUSzVDeWVkbUloU19hR2ItYVhiaXBodGVIUVZTODZtQ1lkdWV1RVlOcDhZOFpJR1Z6bld4TG1YN3BPTUY3ZXhLeGlEaUFOTzNmN3FNbjI3VDVYdw?oc=5",
+        "date": "Sat, 14 Nov 2026 00:07:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE9ZZzd4WHdhQ2gyRU5BckJfY21JTWhSdXYyZC1sZGlmb0FyZEZUSzVDeWVkbUloU19hR2ItYVhiaXBodGVIUVZTODZtQ1lkdWV1RVlOcDhZOFpJR1Z6bld4TG1YN3BPTUY3ZXhLeGlEaU"
+      },
+      {
+        "title": "Apple Shares (AAPL) Look Expensive Heading into 2027 - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOM2lsenhVYnFXTUNRUHVQUkVxVEVMUDNwSzdFcDNnNWNRU3F2dDVGTHh2Zkh1N2laS1FtZHdzb2hQN3B6bHhrcUUxa2VFOWxzY1NlZTVwRFB5YkE4MGxjUHBueG1WQjRjUExnanJaZGZFSTQzX1Y0YTU3bmJ6UGNZYjNyaVdPenFDZHVhU0JlMUZySFBONHVDU2wxNnNIUQ?oc=5",
+        "date": "Wed, 11 Nov 2026 21:15:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOM2lsenhVYnFXTUNRUHVQUkVxVEVMUDNwSzdFcDNnNWNRU3F2dDVGTHh2Zkh1N2laS1FtZHdzb2hQN3B6bHhrcUUxa2VFOWxzY1NlZTVwRFB5YkE4MGxjUHBueG1WQjRjUExnanJaZG"
+      },
+      {
+        "title": "What Could Still Send Apple Stock Higher? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaTREa2hFVXpJMHk2UWNaLUR1RHh3RTBrRGxZUDlIZFpaYjBFakRYUU1rcFBZaHczbzJaQlk3aFh1T3NSZklWSlBha1pzYmI4VGdrZXBGcllDbndVMXl3elVjcnh6N2RwNVAwRFp3WS1TbFBGX2luQkJpb1c0V2xpTHVjdlNxeXhRTWJlb3VZeDlMa3pKUVV5Tw?oc=5",
+        "date": "Fri, 13 Nov 2026 16:25:48 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOaTREa2hFVXpJMHk2UWNaLUR1RHh3RTBrRGxZUDlIZFpaYjBFakRYUU1rcFBZaHczbzJaQlk3aFh1T3NSZklWSlBha1pzYmI4VGdrZXBGcllDbndVMXl3elVjcnh6N2RwNVAwRFp3WS"
+      },
+      {
+        "title": "Apple (AAPL) Picks Core Foldable Glass Supplier For iPhone Duo - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYmt6MzR0X1VRdEVBYVF2Y1drN3B0RlpXRUtmOW9CX0ZFbE5kYUJXV0oxczZUckthVWxMTW1JeVM5bkZLaVE1QjhZSi1kazRpWUEyUHEySFFoZ21URmNfYVVtQ0Q0NEIwZTdldkpmOVc3akt0XzVxaXVvbFZ6d0ZmUzdxOFlPZkVvYUlRaUFtVU5CRTZ4S0E?oc=5",
+        "date": "Mon, 16 Nov 2026 14:10:52 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxOYmt6MzR0X1VRdEVBYVF2Y1drN3B0RlpXRUtmOW9CX0ZFbE5kYUJXV0oxczZUckthVWxMTW1JeVM5bkZLaVE1QjhZSi1kazRpWUEyUHEySFFoZ21URmNfYVVtQ0Q0NEIwZTdldkpmOV"
+      },
+      {
+        "title": "Apple's Q4 Earnings Loom: Buy or Sell AAPL Stock Ahead of Results? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMHN2dUpzWHQ5Zzh6ZGVBSWZsSUk5Wnozek5sbmNZQjhWYTVIQlRJZUdBT2xhU2xDZ2Jsb1dIbkkzNWtacTNRTXl6NVpwVENHdHgycTA2YmJsbXFHZmVpSnQxcTl3eVNXY045NUgwSlE4UnpLYzR4QTJOV0JrUGNGelR0TGpPTTlaQmNrVGY3eU03TXExdEtF?oc=5",
+        "date": "Thu, 29 Oct 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOMHN2dUpzWHQ5Zzh6ZGVBSWZsSUk5Wnozek5sbmNZQjhWYTVIQlRJZUdBT2xhU2xDZ2Jsb1dIbkkzNWtacTNRTXl6NVpwVENHdHgycTA2YmJsbXFHZmVpSnQxcTl3eVNXY045NUgwSl"
+      },
+      {
+        "title": "Where Will Apple Stock Be in 5 Years? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEJWcVExS0JUOTB4RW8zdzRSNDh5dThnbDM2X2JfTlpBTENiRmJQdjhfczUwUEVVbWp4elAtQkJzTmo4Rnd3UmNxT0FmZjF3QUkwRkNfZldWY3h2cm5fMjBqMVpua3JJbkhNem0yU21DNnd4cGRmSzE0SnVZRURqZEM2VDgxN1otcEh6am5DVnk2djRy?oc=5",
+        "date": "Mon, 09 Nov 2026 17:10:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxObEJWcVExS0JUOTB4RW8zdzRSNDh5dThnbDM2X2JfTlpBTENiRmJQdjhfczUwUEVVbWp4elAtQkJzTmo4Rnd3UmNxT0FmZjF3QUkwRkNfZldWY3h2cm5fMjBqMVpua3JJbkhNem0yU2"
+      },
+      {
+        "title": "Why Did AAPL, XERS, ZETA Stocks Jump To 52-Week Highs Today? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMWRUdTlvaUw1Z21GaUpzdnRvTy15NzFsZkJjSUpIYS14anE5N3hBMVN0R2FlU1pDTHhkSGR3TEdoM2RzUGRhREZwRGx0blVyOWF6bUVmekdpMTY4alRveWNzRzBiNHJSak93REcydm5SZEFreEpOUWs0WE1aanVMRWJTc3FOVzZPSVhFblRyaTk?oc=5",
+        "date": "Thu, 12 Nov 2026 03:49:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNMWRUdTlvaUw1Z21GaUpzdnRvTy15NzFsZkJjSUpIYS14anE5N3hBMVN0R2FlU1pDTHhkSGR3TEdoM2RzUGRhREZwRGx0blVyOWF6bUVmekdpMTY4alRveWNzRzBiNHJSak93REcydm"
+      },
+      {
+        "title": "Apple users are about to lose something they've had for 28 years - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZkdNTVM1eXVEN0xUVTJrVzZJdWJ1X3doMmY5TEx4M3pMQ19BNTVHMS1BSjZ1SUhJQUNLOTkzdTZiX3VzVll3V1IzaDdaNk1SYW43eUs2NEhCWHNFTXRyRWpnNlFUajVQaURMeE50dnJ2d2Y3WlBmLUpQN1FhcjhTY1Nra0NzX0lLYnp5a3pjb2J0RmZ1amdGVUZ3?oc=5",
+        "date": "Sat, 14 Nov 2026 16:07:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPZkdNTVM1eXVEN0xUVTJrVzZJdWJ1X3doMmY5TEx4M3pMQ19BNTVHMS1BSjZ1SUhJQUNLOTkzdTZiX3VzVll3V1IzaDdaNk1SYW43eUs2NEhCWHNFTXRyRWpnNlFUajVQaURMeE50dn"
+      }
+    ]
+  }
+}
